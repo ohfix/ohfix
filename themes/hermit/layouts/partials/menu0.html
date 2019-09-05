@@ -1,0 +1,32 @@
+<style>
+	#but {
+		color: #fff;
+		background-color: #5a6272;
+		border-radius: 4px;
+		outline: none;
+		border: none;
+		width: 3cm;
+	}
+	#but:hover {
+		background-color: #4f5664;
+	}
+	#but:active {
+	  background-color: #4f5664;
+	  box-shadow: 0 1px #666;
+	  transform: translateY(1px);
+	}
+</style>
+
+{{- range .Site.Menus.main }}
+	{{- if .HasChildren }}
+		<button onclick="location={{ .URL | absLangURL }}" id="but" class="has-children">{{ .Name }}</button>
+		<span class="sub-menu">
+		{{- range .Children }}
+			<button onclick="location={{ .URL | absLangURL }}" id="but">{{ .Name }}</button>
+		{{- end }}
+		</span>
+	{{- else }}
+		<div><button onclick="location={{ .URL | absLangURL }}" id="but">{{ .Name }}</button></div>
+	{{- end }}
+{{- end }}
+

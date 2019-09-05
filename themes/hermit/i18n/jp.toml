@@ -1,0 +1,62 @@
+# Translations for Simplified Chinese - 简体中文
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+[poweredBy]
+other = "搭載"
+
+# 404.html
+#
+[notFound]
+other = "おっとっと、 ページが見つかりません…"
+
+[home]
+other = "ホーム"
+
+[archives]
+other = "標的"
+
+# posts/single.html
+#
+[posts]
+other = "投稿"
+
+[categories]
+other = "カテゴリー"
+
+[series]
+other = "シリーズ"
+
+[seeAlso]
+other = "また見なさい"
+
+[wordCount]
+other = "{{ .WordCount }} ワード"
+
+[tableOfContents]
+other = "目次"
+
+[newer]
+other = "より新しい"
+
+[older]
+other = "年上の"
+
+[reference]
+other = "参照"
+
+# partials/header.html
+#
+[menu]
+other = "メニュー"
+
+[featuredImage]
+other = "注目の画像"
+
+[author]
+other = "岳志吉田"
+
+[made]
+other = "で作った"
+
+[theme]
+other = "テーマ"

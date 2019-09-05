@@ -1,0 +1,135 @@
+{{ define "head" }}
+{{ if .Site.Params.bgImg -}}
+<style>.bg-img {background-image: url('{{.Site.Params.bgImg | absURL}}');opacity: .1;}</style>
+{{- else if .Site.Params.images -}}
+{{- range first 1 .Site.Params.images -}}
+<style>.bg-img {background-image: url('{{. | absURL}}');opacity: .1;}</style>
+{{- end -}}
+{{- end -}}
+{{ end }}
+
+{{ define "main" }}
+{{- if (or .Site.Params.images .Site.Params.bgImg) }}
+<div class="bg-img"></div>
+{{- end }}
+<div id="spotlight" class="animated fadeIn">
+	<div id="home-center">
+		<style>
+			.bg-img {
+				transform: scale(1.2);
+				background-repeat: repeat-x;
+				opacity: 0.4;
+				animation: backgroundScroll 10s linear infinite;
+				animation-direction: alternate;
+			}
+			@keyframes backgroundScroll {
+				0%   {background-position: 0 0;}
+				50%  {background-position: -100px 0;}
+				100% {background-position: 0 0;}
+			}
+			.container {
+				position: relative;
+				width: 200px;
+				height: 200px;
+				align-content: center;
+				align-self: center;
+				align-items: center;
+				vertical-align: center;
+				border-radius: 50%;
+			}
+			.overlay {
+				position: absolute;
+				border-radius: 50%;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0);
+				transition: background 0.5s ease;
+			}
+
+			.container:hover .overlay {
+				display: block;
+				animation: ham 0.4s 1;
+				animation-direction: alternate;
+				background: rgba(0, 0, 0, .7);
+			}
+
+			img {
+				position: absolute;
+				width: 200px;
+				left: 0;
+				border-radius: 50%
+			}
+
+			.button {
+				position: absolute;
+				left: 5px;
+				top: 80px;
+				opacity: 0.3;
+			}
+			@keyframes skew {
+				0% {
+					transform: skewX(-5deg);
+				}
+				50% {
+					transform: skewX(5deg);
+				}
+			}
+			@keyframes ham {
+				0% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(0);
+				}
+				100% {
+					transform: scale(1);
+				}
+			}
+
+			.container:hover .button {
+				transition-delay: 0.3s;
+				animation: skew 0.5s infinite;
+				animation-direction: alternate;
+				animation-delay: 0.4s;
+				opacity: 1;
+			}
+			.container:hover .button:hover {
+				animation-play-state: paused;
+			}
+		</style>
+		<div class="container">
+			<img src="https://avatars2.githubusercontent.com/u/42998134?s=460&v=4" alt="author">
+			<div class="overlay"></div>
+			<div class="button">
+				{{- with .Site.Params.social }}
+				<div id="home-social">
+					{{ partialCached "social-icons.html" . }}
+				</div>
+				{{- end }}
+			</div>
+		</div>
+		<a href="{{ .Site.BaseURL }}"><h1 id="home-title">{{ .Site.Title }}</h1></a>
+		{{- with .Site.Params.homeSubtitle }}
+		<p id="home-subtitle">{{.}}</p>
+		{{- end }}
+		
+		<nav id="home-social" style="margin: 0; padding: 0; font-size: .8em; ba">
+			{{ partialCached "menu0.html" . }}
+		</nav>
+	</div>
+	<div id="home-footer" style="padding-bottom: 5pt">
+		&copy; {{ now.Format "2006" }} <a href="{{ "/" | absLangURL}}">{{ i18n "author" }}</a> 
+		{{- with (not (in (.Site.Language.Get "disableKinds") "RSS")) }} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>{{ end }}
+		<select onchange="location = this.value" style="background-color: #494f5c; border-radius: 4px; outline: none;">
+			{{ $lang := .Language.LanguageName }}
+			{{ range $.AllTranslations }}
+			{{ if eq .Language.LanguageName $lang }}
+			<option value="{{ .Permalink }}" disabled selected>{{ .Language.LanguageName }}</option>
+			{{ else }}
+			<option value="{{ .Permalink }}">{{ .Language.LanguageName }}</option>
+			{{ end }}
+			{{ end }}
+		</select>
+		{{ end }}

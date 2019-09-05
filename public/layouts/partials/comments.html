@@ -1,0 +1,21 @@
+<span id="IDCommentsPostTitle" style="display:none">{{ .Language.LanguageName }}</span>
+
+<div id="graphcomment"></div>
+<script type="text/javascript">
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		window.gc_params = {
+			graphcomment_id: 'hbtghost-github-io',
+		};
+	}
+	else {
+		window.gc_params = {
+			graphcomment_id: 'hbtghost-github-io',
+			overlay: {"width":480,"button":{"background":"#888","color":"#ffffff"},"bubble":false},
+		};
+	}
+	(function() {
+		var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+		gc.src = 'https://graphcomment.com/js/integration.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+	})();
+</script>

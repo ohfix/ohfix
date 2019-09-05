@@ -1,0 +1,98 @@
+{{ define "head" }}
+{{ partialCached "header.html" . }}
+{{ if .Site.Params.bgImg -}}
+<style>.bg-img {background-image: url('{{.Site.Params.bgImg | absURL}}');opacity: .1;}</style>
+{{- else if .Site.Params.images -}}
+{{- range first 1 .Site.Params.images -}}
+<style>.bg-img {background-image: url('{{. | absURL}}');opacity: .1;}</style>
+{{- end -}}
+{{- end -}}
+{{ end }}
+
+{{ define "main" }}
+	{{- if (or .Site.Params.images .Site.Params.bgImg) }}
+	<div class="bg-img"></div>
+	{{- end }}
+	<main class="site-main section-inner thin animated fadeIn faster">
+		{{ $firstUrlElement := index (split .RelPermalink "/") 1 }}
+		{{ $lastUrlElement := index (split .RelPermalink "/") (sub (len (split .RelPermalink "/")) 2) }}
+		{{- if or (eq $lastUrlElement "categories") (eq $lastUrlElement "series") }}
+		{{ if eq $lastUrlElement "categories"}}
+		<h1>{{ i18n "categories" }}</h1>
+		<div class="posts-group">
+			<ul class="posts-list">
+				{{ range $name, $items := .Site.Taxonomies.categories }}
+				<li class="post-item">
+					<a href="{{ "categories/" | absLangURL}}{{ $name | urlize}}">
+						{{ $temp := $name}}
+						{{ $fName := upper (replace $temp "-" " ") }}
+						<span class="post-title">{{ $fName }}</span>
+						<span class="post-day">({{ len $items }})</span>
+					</a>
+				</li>
+				{{- end }}
+			</ul>
+		</div>
+		{{ else }}
+		<h1>{{ i18n "series" }}</h1>
+		<div class="posts-group">
+			<ul class="posts-list">
+				{{ range $name, $items := .Site.Taxonomies.series }}
+				<li class="post-item">
+					<a href="{{ "series/" | absLangURL}}{{ $name | urlize}}">
+						{{ $temp := $name}}
+						{{ $fName := upper (replace $temp "-" " ") }}
+						<span class="post-title">{{ $fName }}</span>
+						<span class="post-day">({{ len $items }})</span>
+					</a>
+				</li>
+				{{- end }}
+			</ul>
+		</div>
+		{{ end }}
+
+		{{- else }}
+		{{ if or (eq $firstUrlElement "posts") (not (eq .Language.LanguageName "en")) }}
+		<h1>{{ i18n "posts" }}</h1>
+		{{ else }}
+		{{ $temp := $lastUrlElement }}
+		{{ $fName := upper (replace $temp "-" " ") }}
+		<h2>{{ $fName }}</h2>
+		{{ end }}
+		{{- if .Content }}
+			<div class="content">
+				{{ .Content }}
+			</div>
+		{{- end }}
+
+		{{- range .Data.Pages.GroupByDate "2006" }}
+		<div class="posts-group">
+			<div class="post-year" id="{{ .Key }}">{{ .Key }}</div>
+			<ul class="posts-list">
+				{{- range .Pages }}
+				<li class="post-item">
+					<a href="{{.Permalink}}">
+						<span class="post-title">{{.Title}}</span>
+						<span class="post-day">
+						{{- if eq .Language.LanguageName "en"}}
+						{{ .Date.Format .Site.Params.dateformShort }}
+						{{- else if eq .Language.LanguageName "vi"}}
+						Ngày {{ .Lastmod.Day}} Tháng {{ index $.Site.Data.intMonth (printf "%d" .Lastmod.Month) }}
+						{{- else }}
+						{{ index $.Site.Data.intMonth (printf "%d" .Lastmod.Month) }}月{{ .Lastmod.Day}}日
+						{{- end }}
+					</span>
+					</a>
+				</li>
+				{{- end }}
+			</ul>
+		</div>
+		{{- end }}
+
+		{{- end }}
+	</main>
+{{ end }}
+
+{{ define "footer" }}
+{{ partialCached "footer.html" . }}
+{{ end }}
