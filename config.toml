@@ -34,7 +34,7 @@ googleAnalytics = "UA-125057333-1"
   [[languages.en.menu.main]]
     name = "About me"
     url = "about-me/"
-    weight = 40
+    weight = 50
 
   [languages.jp]
     weight = 2
@@ -56,7 +56,7 @@ googleAnalytics = "UA-125057333-1"
     [[languages.jp.menu.main]]
       name = "私について"
       url = "about-me/"
-      weight = 40
+      weight = 50
   
   [languages.vi]
     weight = 2
@@ -78,12 +78,7 @@ googleAnalytics = "UA-125057333-1"
   [[languages.vi.menu.main]]
     name = "Về mình"
     url = "about-me/"
-    weight = 40
-  # [[languages.vi.menu.main]]
-  #   name = "Search"
-  #   url = "search/"
-  #   weight = 50
-
+    weight = 50
 
 [author]
   name = "Thai Ngo"
@@ -157,4 +152,4 @@ mediaType = "application/json"
 notAlternative = true
 
 [outputs]
-home = ["HTML", "RSS", "Algolia"]
+  home = ["HTML", "RSS", "JSON"]

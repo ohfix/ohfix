@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pointer on Nano Guides</title>
+    <link>https://HBTghost.github.io/tags/pointer/</link>
+    <description>Recent content in Pointer on Nano Guides</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 19 Aug 2019 19:43:53 +0700</lastBuildDate>
+    
+	<atom:link href="https://HBTghost.github.io/tags/pointer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>C&#43;&#43; Represent Null Pointer</title>
+      <link>https://HBTghost.github.io/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</link>
+      <pubDate>Mon, 19 Aug 2019 19:43:53 +0700</pubDate>
+      
+      <guid>https://HBTghost.github.io/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</guid>
+      <description>Rule Use nullptr rather than 0 or NULL.
+Reason  Readability. Because C++ define NULL is an const type int has value 0, that can lead to wrong in some situations like the following example. Minimize surprises: nullptr cannot be confused with an int, since it is defined as a null pointer.
+ Therefore, nullptr has a well-specified (very restrictive) type, and thus works in more scenarios where type deduction might do the wrong thing on NULL or 0 .</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="google-site-verification" content="wHMaHv7-oKdgueYZDdGVqkRUnxB6oa1umdnh_Ixt-DE" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="/js/config.js"></script>
+	<script data-main="/js/embed" src="/js/components/requirejs/require.js"></script>
+<meta itemprop="name" content="C&#43;&#43; Cú pháp Xuống dòng">
+<meta itemprop="description" content="Nguyên tắc Thích &#39;\n&#39; hay &quot;\n&quot; hơn std::endl.
+Lý do Từ khóa điều khiển std::endl hầu hết tương đương với &#39;\n&#39; và &quot;\n&quot;; khi được sử dụng thường xuyên, hầu hết nó chỉ đơn giản là làm chậm đầu ra bằng cách thực hiện flush() s dự phòng. Sự chậm lại này có thể là đáng kể so với đầu ra kiểu printf.
+Ví dụ std::cout &lt;&lt; &#34;Hello, World!&#34; &lt;&lt; std::endl; // 2 toán tử xuất và 1 flush std::cout &lt;&lt; &#34;Hello, World!">
+
+
+<meta itemprop="datePublished" content="2019-08-25T16:45:57&#43;07:00" />
+<meta itemprop="dateModified" content="2019-09-05T19:18:14&#43;07:00" />
+<meta itemprop="wordCount" content="159">
+
+  <meta itemprop="image" content="https://picsum.photos/1024/768/?random">
+
+
+
+<meta itemprop="keywords" content="C&#43;&#43;,Đề xuất," />
+<meta property="og:title" content="C&#43;&#43; Cú pháp Xuống dòng" />
+<meta property="og:description" content="Nguyên tắc Thích &#39;\n&#39; hay &quot;\n&quot; hơn std::endl.
+Lý do Từ khóa điều khiển std::endl hầu hết tương đương với &#39;\n&#39; và &quot;\n&quot;; khi được sử dụng thường xuyên, hầu hết nó chỉ đơn giản là làm chậm đầu ra bằng cách thực hiện flush() s dự phòng. Sự chậm lại này có thể là đáng kể so với đầu ra kiểu printf.
+Ví dụ std::cout &lt;&lt; &#34;Hello, World!&#34; &lt;&lt; std::endl; // 2 toán tử xuất và 1 flush std::cout &lt;&lt; &#34;Hello, World!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://HBTghost.github.io/vi/posts/coding/c&#43;&#43;/cpp-new-line-syntax/" />
+
+<meta property="og:image" content="https://picsum.photos/1024/768/?random" />
+<meta property="article:published_time" content="2019-08-25T16:45:57+07:00" />
+<meta property="article:modified_time" content="2019-09-05T19:18:14+07:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://picsum.photos/1024/768/?random"/>
+
+<meta name="twitter:title" content="C&#43;&#43; Cú pháp Xuống dòng"/>
+<meta name="twitter:description" content="Nguyên tắc Thích &#39;\n&#39; hay &quot;\n&quot; hơn std::endl.
+Lý do Từ khóa điều khiển std::endl hầu hết tương đương với &#39;\n&#39; và &quot;\n&quot;; khi được sử dụng thường xuyên, hầu hết nó chỉ đơn giản là làm chậm đầu ra bằng cách thực hiện flush() s dự phòng. Sự chậm lại này có thể là đáng kể so với đầu ra kiểu printf.
+Ví dụ std::cout &lt;&lt; &#34;Hello, World!&#34; &lt;&lt; std::endl; // 2 toán tử xuất và 1 flush std::cout &lt;&lt; &#34;Hello, World!"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>C&#43;&#43; Cú pháp Xuống dòng</title>
+	<link rel="stylesheet" href="https://HBTghost.github.io/css/style.min.5ee5e7976cd09872c64e40a582206543f6aa38c69a8c43898aadc70040344b92.css" integrity="sha256-XuXnl2zQmHLGTkClgiBlQ/aqOMaajEOJiq3HAEA0S5I=" crossorigin="anonymous">
+	<style>.bg-img {background-image: url('https://picsum.photos/1024/768/?random');}</style>
+	<style>
+	.highlight-copy-btn {
+		border: none;
+		outline: none;
+		padding: 2px;	
+
+	}	
+	</style>
+</head>
+
+<body id="page" style="font-family: Verdana !important">
+	
+<header id="site-header" class="animated slideInUp faster">
+	<div class="hdr-wrapper section-inner">
+		<div class="hdr-left">
+			<div class="site-branding">
+				<a href = "https://HBTghost.github.io/vi/">Nano Guides</a>
+			</div>
+			<nav class="site-nav hide-in-mobile">
+				<style>
+	#but {
+		background-color: #383d47;
+		border-radius: 4px;
+		outline: none;
+		border: none;
+	}
+	#but:hover {
+		background-color: #494f5c;
+	}
+	#but:active {
+	  background-color: #494f5c;
+	  box-shadow: 0 1px #666;
+	  transform: translateY(1px);
+	}
+</style>
+		| <button onclick="location=&#34;https://HBTghost.github.io/vi/posts/&#34;" id="but">Bài viết</button>
+		| <button onclick="location=&#34;https://HBTghost.github.io/vi/series/&#34;" id="but">Loạt</button>
+		| <button onclick="location=&#34;https://HBTghost.github.io/vi/categories/&#34;" id="but">Thể loại</button>
+		| <button onclick="location=&#34;https://HBTghost.github.io/vi/about-me/&#34;" id="but">Về mình</button>
+
+
+			</nav>
+		</div>
+		<div class="hdr-right hdr-icons">
+			<span class="hide-in-mobile">
+				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+<style>
+	.box{
+		position: absolute;
+		transform: translate(-100%, 0%);
+		background-color: #bbb;
+		height: 40px;
+		border-radius: 40px;
+	}
+	.input_box {
+		border: none;
+		outline: none;
+		background:none;
+		float: left;
+		padding: 0;
+		color: #000;
+		font-size: 16px;
+		font-style: italic;
+		font-weight: bold;
+		transition: 0.4s all;
+		line-height: 40px;
+		width: 0px;
+	}
+	.btn {
+		background-color: #bbb;
+		color: #3498DB;
+		float: right;
+		text-decoration: none;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		border-radius: 50%;
+	}
+	.btn:hover {
+		color: #E74C3C;
+	}
+	.box:hover > .input_box {
+		width: 240px;
+		padding-left: 15px;
+	}
+</style>
+<form action="https://HBTghost.github.io/vi/search">
+	<div class="box">
+		<input class="input_box" id="search-query" name="s" placeholder="Tìm kiếm"/>
+		<a class="btn" href="#"> <i class="fas fa-search"></i> </a>
+	</div>
+</form>
+
+			</span>
+			<button id="img-btn" class="hdr-btn" title="Hình ảnh đặc trưng" style="outline: none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg></button><button id="toc-btn" class="hdr-btn desktop-only-ib" title="Mục lục" style="outline: none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line></svg></button><span class="hdr-social hide-in-mobile">
+			<a href="https://twitter.com/hacbangtam" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://github.com/HBTghost" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://facebook.com/hacbangtam" target="_blank" rel="noopener me" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a><a href="mailto:18127208@student.hcmus.edu.vn?subject=Nano%20Guides:%20" target="_blank" rel="noopener me" title="Email"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			<select onchange="location = this.value" style="background-color: #494f5c; border-radius: 4px; border: none; outline: none;">
+				
+				
+				
+				<option value="https://HBTghost.github.io/posts/coding/c&#43;&#43;/cpp-new-line-syntax/">en</option>
+				
+				
+				
+				<option value="https://HBTghost.github.io/vi/posts/coding/c&#43;&#43;/cpp-new-line-syntax/" disabled selected>vi</option>
+				
+				
+				
+				<option value="https://HBTghost.github.io/jp/posts/coding/c&#43;&#43;/cpp-new-line-syntax/">jp</option>
+				
+				
+			</select>
+		</div>
+	</div>
+</header>
+<div id="mobile-menu" class="animated fast" style="border: none; outline: none">
+	<ul>
+		<li><a href="https://HBTghost.github.io/vi/posts/">Bài viết</a></li>
+		<li><a href="https://HBTghost.github.io/vi/series/">Loạt</a></li>
+		<li><a href="https://HBTghost.github.io/vi/categories/">Thể loại</a></li>
+		<li><a href="https://HBTghost.github.io/vi/about-me/">Về mình</a></li>
+		<li><a href="https://HBTghost.github.io/vi/search">Tìm kiếm</a></li>
+	</ul>
+</div>
+
+
+	<div class="bg-img"></div>
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<h1>C&#43;&#43; Cú pháp Xuống dòng</h1>
+				<div class="post-meta"><span>Ngày 5 Tháng 9 Năm 2019 &#183; 2 phút đọc</span></div>
+			</header>
+			<hr class="post-header">
+			<div class="content">
+				
+
+<h2 id="nguyên-tắc">Nguyên tắc<a href="#nguyên-tắc" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>Thích <code>'\n'</code> hay <code>&quot;\n&quot;</code> hơn <code>std::endl</code>.</p>
+
+<h2 id="lý-do">Lý do<a href="#lý-do" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>Từ khóa điều khiển <code>std::endl</code> hầu hết tương đương với <code>'\n'</code> và <code>&quot;\n&quot;</code>; khi được sử dụng thường xuyên, hầu hết nó chỉ đơn giản là làm chậm đầu ra bằng cách thực hiện <code>flush()</code> s dự phòng. Sự chậm lại này có thể là đáng kể so với đầu ra kiểu <code>printf</code>.</p>
+
+<h2 id="ví-dụ">Ví dụ<a href="#ví-dụ" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<div class="highlight"><pre class="chroma"><code class="language-C++" data-lang="C++"><span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Hello, World!&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span> <span class="c1">// 2 toán tử xuất và 1 flush
+</span><span class="c1"></span><span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Hello, World!</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>            <span class="c1">// 1 toán tử xuất và không flush
+</span></code></pre></div>
+<h2 id="chú-ý">Chú ý<a href="#chú-ý" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<ul>
+<li>Đối với tương tác <code>cin</code> / <code>cout</code> (và tương đương), không có lý do gì để <code>flush</code>; điều đó được thực hiện tự động. Để ghi vào một tập tin, hiếm khi cần phải <code>flush</code>.</li>
+<li>Ngoài vấn đề (đôi khi quan trọng) về hiệu suất, sự lựa chọn giữa <code>'\n'</code> và <code>std::endl</code> gần như hoàn toàn về mặt thẩm mỹ.</li>
+</ul>
+
+<p align="right">Tham khảo:
+<a href="http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines">
+The C++ Core Guidelines
+</a>
+</p>
+
+			</div>
+			<hr class="post-end">
+			<style>
+				#but1 {
+					color: #fff;
+					background-color: #5a6272;
+					border-radius: 4px;
+					outline: none;
+					border: none;
+					 
+				}
+				#but1:hover {
+					background-color: #4f5664;
+				}
+				#but1:active {
+				  background-color: #4f5664;
+				  box-shadow: 0 3px #666;
+				  transform: translateY(4px);
+				}
+			</style>
+			<script>
+				function go(link) {
+					window.location = link;
+				}
+			</script>
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><a href="https://HBTghost.github.io/vi/tags/c&#43;&#43;"><button id="but1">C&#43;&#43;</button> </a></span><a href="https://HBTghost.github.io/vi/tags/%C4%91%E1%BB%81-xu%E1%BA%A5t"><button id="but1">Đề xuất</button> </a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>159 Từ</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-08-25 16:45 &#43;0700</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="https://github.com/HBTghost/HBTghost-github-io3b2e5fd4ad1f7db8e1b4f30240119d14d245777d" target="_blank" rel="noopener">3b2e5fd</a> @ 2019-09-05</p>
+			</footer>
+		</article>
+		<aside id="toc">
+			<div class="toc-title">Mục lục</div>
+			<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#nguyên-tắc">Nguyên tắc</a></li>
+<li><a href="#lý-do">Lý do</a></li>
+<li><a href="#ví-dụ">Ví dụ</a></li>
+<li><a href="#chú-ý">Chú ý</a></li>
+</ul></li>
+</ul>
+</nav>
+		</aside>
+		<div class="post-nav thin">
+			<a class="prev-post" href="https://HBTghost.github.io/vi/posts/coding/c&#43;&#43;/cpp-initialize-syntax/">
+				<span class="post-nav-label">Cũ hơn&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>C&#43;&#43; Cú pháp Khởi tạo</span>
+			</a>
+		</div>
+		<div id="comments" class="thin"><span id="IDCommentsPostTitle" style="display:none">vi</span>
+
+<div id="graphcomment"></div>
+<script type="text/javascript">
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		window.gc_params = {
+			graphcomment_id: 'hbtghost-github-io',
+		};
+	}
+	else {
+		window.gc_params = {
+			graphcomment_id: 'hbtghost-github-io',
+			overlay: {"width":480,"button":{"background":"#888","color":"#ffffff"},"bubble":false},
+		};
+	}
+	(function() {
+		var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+		gc.src = 'https://graphcomment.com/js/integration.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+	})();
+</script></div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2019 <a href = "https://HBTghost.github.io/vi/">Thái Ngô</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Làm với <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Chủ đề <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a>  &#183; <a href="https://HBTghost.github.io/vi/"  title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://HBTghost.github.io/js/bundle.min.578153b9ef4667a80d1413ce39a21b829e3f5cf54a41682a4597c5dcef4eb518.js" integrity="sha256-V4FTue9GZ6gNFBPOOaIbgp4/XPVKQWgqRZfF3O9OtRg=" crossorigin="anonymous"></script>
+	
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-125057333-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</body>
+
+</html>

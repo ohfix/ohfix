@@ -1,8 +1,12 @@
 # Translations for Italian
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
-[poweredBy]
-other = "Cung cấp bởi"
+[noPage]
+other = "Không tìm thấy trang phù hợp"
+[enter]
+other = "Tìm kiếm"
+[pageMatch]
+other = "Trang phù hợp"
 
 # 404.html
 #

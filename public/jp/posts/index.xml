@@ -1,0 +1,137 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Nano Guides</title>
+		<link>https://HBTghost.github.io/jp/posts/</link>
+		<description>Recent content in Posts on Nano Guides</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Sun, 25 Aug 2019 16:45:57 +0700</lastBuildDate>
+		<atom:link href="https://HBTghost.github.io/jp/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>C&#43;&#43; 改行構文</title>
+			<link>https://HBTghost.github.io/jp/posts/coding/c&#43;&#43;/cpp-new-line-syntax/</link>
+			<pubDate>Sun, 25 Aug 2019 16:45:57 +0700</pubDate>
+			
+			<guid>https://HBTghost.github.io/jp/posts/coding/c&#43;&#43;/cpp-new-line-syntax/</guid>
+			<description>ルール std::endl よりも &#39;\n&#39; または &amp;quot;\n&amp;quot; を優先してください。 理由 std::endl マニピュレータは、ほとんどが &#39;\n&#39; および &amp;quot;\n&amp;quot; と同等です。 最も一般的に使用されるように、冗長な fl</description>
+			<content type="html"><![CDATA[
+
+<h2 id="ルール">ルール</h2>
+
+<p><code>std::endl</code> よりも <code>'\n'</code> または <code>&quot;\n&quot;</code> を優先してください。</p>
+
+<h2 id="理由">理由</h2>
+
+<p><code>std::endl</code> マニピュレータは、ほとんどが <code>'\n'</code> および <code>&quot;\n&quot;</code> と同等です。 最も一般的に使用されるように、冗長な <code>flush()</code>を実行することにより、出力を単に遅くします。 この速度の低下は、<code>printf</code> スタイルの出力と比較して大幅な場合があります。</p>
+
+<h2 id="例">例</h2>
+<div class="highlight"><pre class="chroma"><code class="language-C++" data-lang="C++"><span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Hello, World!&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span> <span class="c1">// 2 つの出力操作と 1 flush
+</span><span class="c1"></span><span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Hello, World!</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>            <span class="c1">// 1 つの出力操作といいえ flush
+</span></code></pre></div>
+<h2 id="注意">注意</h2>
+
+<ul>
+<li><code>cin</code> / <code>cout</code>（および同等の）対話の場合、<code>flush</code>する理由はありません。 それは自動的に行われます。 ファイルに書き込むために、<code>flush</code> する必要はほとんどありません。</li>
+<li>パフォーマンスの（ときどき重要な）問題は別として、<code>'\n'</code> と <code>std::endl</code> の選択はほぼ完全に美的です。</li>
+</ul>
+
+<p align="right">参照:
+<a href="http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines">
+The C++ Core Guidelines
+</a>
+</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>C&#43;&#43; 構文の初期化</title>
+			<link>https://HBTghost.github.io/jp/posts/coding/c&#43;&#43;/cpp-initialize-syntax/</link>
+			<pubDate>Fri, 23 Aug 2019 15:57:38 +0700</pubDate>
+			
+			<guid>https://HBTghost.github.io/jp/posts/coding/c&#43;&#43;/cpp-initialize-syntax/</guid>
+			<description>ルール {}-初期化構文を優先します。 あいまいさの解析を可能にする ()初期化を避けます。 理由 {} の初期化のルールは、他の形式の初期化よりも単純で</description>
+			<content type="html"><![CDATA[
+
+<h2 id="ルール">ルール</h2>
+
+<ul>
+<li><code>{}</code>-初期化構文を優先します。</li>
+<li>あいまいさの解析を可能にする <code>()</code>初期化を避けます。</li>
+</ul>
+
+<h2 id="理由">理由</h2>
+
+<ul>
+<li><code>{}</code> の初期化のルールは、他の形式の初期化よりも単純で、より一般的で、曖昧さが少なく、安全です。</li>
+<li>変換を狭めることができないことが確実な場合にのみ、<code>=</code> を使用します。 組み込みの算術型の場合、<code>auto</code> でのみ <code>=</code> を使用します。</li>
+</ul>
+
+<h2 id="例">例</h2>
+<div class="highlight"><pre class="chroma"><code class="language-C++" data-lang="C++"><span class="kt">int</span> <span class="n">x</span> <span class="p">{</span><span class="mf">7.9</span><span class="p">};</span>   <span class="c1">// エラー：ナローイング
+</span><span class="c1"></span><span class="kt">int</span> <span class="nf">y</span> <span class="p">(</span><span class="mf">7.9</span><span class="p">);</span>   <span class="c1">// OK：y は 7 になります。コンパイラの警告を期待します
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">z</span> <span class="o">=</span> <span class="mf">7.9</span><span class="p">;</span>   <span class="c1">// OK：z は 7 になります。コンパイラの警告を期待します
+</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-C++" data-lang="C++"><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="k">typename</span> <span class="n">U</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">f</span><span class="p">(</span><span class="n">T</span> <span class="n">t</span><span class="p">,</span> <span class="n">U</span> <span class="n">u</span><span class="p">)</span> <span class="p">{</span>
+   <span class="n">T</span> <span class="n">v1</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>       <span class="c1">// v1 は関数または変数ですか？
+</span><span class="c1"></span>   <span class="n">T</span> <span class="n">v2</span> <span class="p">{</span><span class="n">x</span><span class="p">};</span>      <span class="c1">// 変数
+</span><span class="c1"></span>   <span class="k">auto</span> <span class="n">x</span> <span class="o">=</span> <span class="n">T</span><span class="p">(</span><span class="n">u</span><span class="p">);</span> <span class="c1">// 建設またはキャスト？
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></div>
+<h2 id="執行">執行</h2>
+
+<ul>
+<li>絞り込みが発生する算術型を初期化するための <code>=</code> の使用にフラグを立てます。</li>
+<li>実際には宣言である <code>()</code> 初期化構文の使用にフラグを立てます。（多くのコンパイラはこれについてすでに警告するはずです。）</li>
+</ul>
+
+<p align="right">参照:
+<a href="http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines">
+The C++ Core Guidelines
+</a>
+</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>C&#43;&#43; ヌルポインターを表す</title>
+			<link>https://HBTghost.github.io/jp/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</link>
+			<pubDate>Mon, 19 Aug 2019 19:43:53 +0700</pubDate>
+			
+			<guid>https://HBTghost.github.io/jp/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</guid>
+			<description>ルール つかいます nullptr つかいます 0 または NULL。 理由 読みやすさ。C++ で定義されている NULL は const 型であるため、int の値は 0 であるため、次の例のよ</description>
+			<content type="html"><![CDATA[
+
+<h2 id="ルール">ルール</h2>
+
+<p>つかいます <code>nullptr</code> つかいます <code>0</code> または <code>NULL</code>。</p>
+
+<h2 id="理由">理由</h2>
+
+<ul>
+<li><p>読みやすさ。C++ で定義されている <code>NULL</code> は <code>const</code> 型であるため、<code>int</code> の値は <code>0</code> であるため、次の例のような状況では誤った結果になる可能性があります。驚きを最小限に抑える：<code>nullptr</code> は <code>int</code> と混同することはできません。これは、ヌル <code>ポインター</code> として定義されているためです。</p></li>
+
+<li><p>したがって、<code>nullptr</code> には適切に指定された（非常に制限的な）型があるため、<a href="https://www.modernescpp.com/index.php/c-insights-type-deduction">型の推定</a> が <code>NULL</code>または <code>0</code> に対して間違った動作をする可能性のあるシナリオで機能します。</p></li>
+</ul>
+
+<h2 id="例">例</h2>
+<div class="highlight"><pre class="chroma"><code class="language-C++" data-lang="C++"><span class="kt">void</span> <span class="nf">f</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">f</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">);</span>
+<span class="n">f</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>    <span class="c1">// コール f(int)
+</span><span class="c1"></span><span class="n">f</span><span class="p">(</span><span class="k">nullptr</span><span class="p">);</span> <span class="c1">// コール f(char*)
+</span></code></pre></div>
+<h2 id="執行">執行</h2>
+
+<p>ポインターに <code>0</code> と <code>NULL</code> の使用を示すフラグ。変換は、単純なプログラム変換によって支援される場合があります。</p>
+
+<p align="right">参照:
+<a href="http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines">
+The C++ Core Guidelines
+</a>
+</p>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>

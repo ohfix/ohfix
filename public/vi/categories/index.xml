@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Nano Guides</title>
+    <link>https://HBTghost.github.io/vi/categories/</link>
+    <description>Recent content in Categories on Nano Guides</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 25 Aug 2019 16:45:57 +0700</lastBuildDate>
+    
+	<atom:link href="https://HBTghost.github.io/vi/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lập trình</title>
+      <link>https://HBTghost.github.io/vi/categories/l%E1%BA%ADp-tr%C3%ACnh/</link>
+      <pubDate>Sun, 25 Aug 2019 16:45:57 +0700</pubDate>
+      
+      <guid>https://HBTghost.github.io/vi/categories/l%E1%BA%ADp-tr%C3%ACnh/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

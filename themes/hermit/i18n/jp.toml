@@ -1,8 +1,12 @@
 # Translations for Simplified Chinese - 简体中文
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
-[poweredBy]
-other = "搭載"
+[noPage]
+other = "一致するページが見つかりません"
+[enter]
+other = "サーチ"
+[pageMatch]
+other = "一致するページ"
 
 # 404.html
 #

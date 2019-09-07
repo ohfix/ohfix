@@ -1,8 +1,12 @@
 # Translations for English
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
-[poweredBy]
-other = "Powered by"
+[noPage]
+other = "No matching pages found"
+[enter]
+other = "Search"
+[pageMatch]
+other = "Matching pages"
 # 404.html
 #
 [notFound]

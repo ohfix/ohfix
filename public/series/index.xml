@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Nano Guides</title>
+    <link>https://HBTghost.github.io/series/</link>
+    <description>Recent content in Series on Nano Guides</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 01 Sep 2019 22:36:01 +0700</lastBuildDate>
+    
+	<atom:link href="https://HBTghost.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Harry Potter</title>
+      <link>https://HBTghost.github.io/series/harry-potter/</link>
+      <pubDate>Sun, 01 Sep 2019 22:36:01 +0700</pubDate>
+      
+      <guid>https://HBTghost.github.io/series/harry-potter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Harry Potter and the Deathly Hallows (B7)</title>
+      <link>https://HBTghost.github.io/series/harry-potter-and-the-deathly-hallows-b7/</link>
+      <pubDate>Sun, 01 Sep 2019 22:36:01 +0700</pubDate>
+      
+      <guid>https://HBTghost.github.io/series/harry-potter-and-the-deathly-hallows-b7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Harry Potter and the Half-Blood Prince (B6)</title>
+      <link>https://HBTghost.github.io/series/harry-potter-and-the-half-blood-prince-b6/</link>
+      <pubDate>Sun, 01 Sep 2019 21:30:01 +0700</pubDate>
+      
+      <guid>https://HBTghost.github.io/series/harry-potter-and-the-half-blood-prince-b6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Harry Potter and the Order of the Phoenix (B5)</title>
+      <link>https://HBTghost.github.io/series/harry-potter-and-the-order-of-the-phoenix-b5/</link>
+      <pubDate>Sun, 01 Sep 2019 19:38:19 +0700</pubDate>
+      
+      <guid>https://HBTghost.github.io/series/harry-potter-and-the-order-of-the-phoenix-b5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Harry Potter and the Prisoner of Azkaban (B3)</title>
+      <link>https://HBTghost.github.io/series/harry-potter-and-the-prisoner-of-azkaban-b3/</link>
+      <pubDate>Sun, 01 Sep 2019 15:22:09 +0700</pubDate>
+      
+      <guid>https://HBTghost.github.io/series/harry-potter-and-the-prisoner-of-azkaban-b3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Harry Potter and the Goblet of Fire (B4)</title>
+      <link>https://HBTghost.github.io/series/harry-potter-and-the-goblet-of-fire-b4/</link>
+      <pubDate>Sun, 01 Sep 2019 13:38:37 +0700</pubDate>
+      
+      <guid>https://HBTghost.github.io/series/harry-potter-and-the-goblet-of-fire-b4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Harry Potter and the Chamber of Secrets (B2)</title>
+      <link>https://HBTghost.github.io/series/harry-potter-and-the-chamber-of-secrets-b2/</link>
+      <pubDate>Sat, 31 Aug 2019 23:26:49 +0700</pubDate>
+      
+      <guid>https://HBTghost.github.io/series/harry-potter-and-the-chamber-of-secrets-b2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Harry Potter and the Philosophers Stone (B1)</title>
+      <link>https://HBTghost.github.io/series/harry-potter-and-the-philosophers-stone-b1/</link>
+      <pubDate>Fri, 30 Aug 2019 11:18:16 +0700</pubDate>
+      
+      <guid>https://HBTghost.github.io/series/harry-potter-and-the-philosophers-stone-b1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://HBTghost.github.io/series/c&#43;&#43;/</link>
+      <pubDate>Sun, 25 Aug 2019 16:45:57 +0700</pubDate>
+      
+      <guid>https://HBTghost.github.io/series/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://HBTghost.github.io/series/hugo/</link>
+      <pubDate>Mon, 24 Dec 2018 12:29:41 +0800</pubDate>
+      
+      <guid>https://HBTghost.github.io/series/hugo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

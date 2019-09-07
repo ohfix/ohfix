@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+<style>
+	.box{
+		position: absolute;
+		transform: translate(-100%, 0%);
+		background-color: #bbb;
+		height: 40px;
+		border-radius: 40px;
+	}
+	.input_box {
+		border: none;
+		outline: none;
+		background:none;
+		float: left;
+		padding: 0;
+		color: #000;
+		font-size: 16px;
+		font-style: italic;
+		font-weight: bold;
+		transition: 0.4s all;
+		line-height: 40px;
+		width: 0px;
+	}
+	.btn {
+		background-color: #bbb;
+		color: #3498DB;
+		float: right;
+		text-decoration: none;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		border-radius: 50%;
+	}
+	.btn:hover {
+		color: #E74C3C;
+	}
+	.box:hover > .input_box {
+		width: 240px;
+		padding-left: 15px;
+	}
+</style>
+<form action="{{ "search" | absLangURL }}">
+	<div class="box">
+		<input class="input_box" id="search-query" name="s" placeholder="{{ i18n "enter" .}}"/>
+		<a class="btn" href="#"> <i class="fas fa-search"></i> </a>
+	</div>
+</form>

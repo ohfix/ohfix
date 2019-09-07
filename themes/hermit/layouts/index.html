@@ -98,6 +98,21 @@
 			.container:hover .button:hover {
 				animation-play-state: paused;
 			}
+			.search {
+				margin-top: 4px;
+			  text-align: center;
+			  width: 2.8cm;
+			  transition: all .5s ease;
+			  border-radius: 4px;
+			  border: none;
+			  padding: 4px 0.1cm;
+			  outline: none;
+			  background-color: #ddd;
+			  color: #000
+			}
+			.search:focus {
+			  width: 6cm;
+			}
 		</style>
 		<div class="container">
 			<img src="https://avatars2.githubusercontent.com/u/42998134?s=460&v=4" alt="author">
@@ -115,8 +130,11 @@
 		<p id="home-subtitle">{{.}}</p>
 		{{- end }}
 		
-		<nav id="home-social" style="margin: 0; padding: 0; font-size: .8em; ba">
+		<nav id="home-social" style="margin: 0; padding: 0; font-size: .8em;">
 			{{ partialCached "menu0.html" . }}
+			<form action="{{ "search" | absLangURL }}">
+			  <input id="search-query" name="s"placeholder="{{ i18n "enter" .}}" class="search" />
+			</form>
 		</nav>
 	</div>
 	<div id="home-footer" style="padding-bottom: 5pt">
