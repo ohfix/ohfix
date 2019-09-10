@@ -59,14 +59,21 @@
 				position: absolute;
 				width: 200px;
 				left: 0;
-				border-radius: 50%
+				border-radius: 50%;
 			}
 
+			@media (max-width: 760px) {
+				.container {
+					margin-top: -70px;
+				}
+			}
 			.button {
 				position: absolute;
-				left: 5px;
-				top: 80px;
-				opacity: 0.3;
+				left: 40%;
+				right: 40%;
+				top: 70px;
+				opacity: 0;
+				font-size: 40px;
 			}
 			@keyframes skew {
 				0% {
@@ -98,43 +105,24 @@
 			.container:hover .button:hover {
 				animation-play-state: paused;
 			}
-			.search {
-				margin-top: 4px;
-			  text-align: center;
-			  width: 2.8cm;
-			  transition: all .5s ease;
-			  border-radius: 4px;
-			  border: none;
-			  padding: 4px 0.1cm;
-			  outline: none;
-			  background-color: #ddd;
-			  color: #000
-			}
-			.search:focus {
-			  width: 6cm;
-			}
 		</style>
 		<div class="container">
-			<img src="https://avatars2.githubusercontent.com/u/42998134?s=460&v=4" alt="author">
+			<img src="https://avatars3.githubusercontent.com/u/55048462?s=400&u=8ef603c9518ca04c268455a467e6570490aac72e&v=4" alt="author">
 			<div class="overlay"></div>
 			<div class="button">
-				{{- with .Site.Params.social }}
-				<div id="home-social">
-					{{ partialCached "social-icons.html" . }}
-				</div>
-				{{- end }}
+				<a href="https://github.com/ohfix/ohfix.github.io.git" target="_blank" rel="noopener me" title="Source" style="color: #3498DB"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+</a>
 			</div>
 		</div>
-		<a href="{{ .Site.BaseURL }}"><h1 id="home-title">{{ .Site.Title }}</h1></a>
+		{{ partialCached "searchO.html" . }}
+		<a href="{{ .Site.BaseURL }}"><h1 id="home-title" style=""><span style="color: #3498DB">O</span>h, fixed it</h1></a>
+		
 		{{- with .Site.Params.homeSubtitle }}
 		<p id="home-subtitle">{{.}}</p>
 		{{- end }}
 		
-		<nav id="home-social" style="margin: 0; padding: 0; font-size: .8em;">
+		<nav id="home-social" style="margin-top: 10px; padding: 0; font-size: .8em;">
 			{{ partialCached "menu0.html" . }}
-			<form action="{{ "search" | absLangURL }}">
-			  <input id="search-query" name="s"placeholder="{{ i18n "enter" .}}" class="search" />
-			</form>
 		</nav>
 	</div>
 	<div id="home-footer" style="padding-bottom: 5pt">

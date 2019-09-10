@@ -4,6 +4,10 @@
 [noPage]
 other = "No matching pages found"
 [enter]
+other = "Search the post"
+[searching]
+other = "Searching..."
+[search]
 other = "Search"
 [pageMatch]
 other = "Matching pages"

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recommend on Nano Guides</title>
-    <link>https://HBTghost.github.io/tags/recommend/</link>
-    <description>Recent content in Recommend on Nano Guides</description>
+    <title>Recommend on Oh, fixed it</title>
+    <link>https://ohfix.github.io/tags/recommend/</link>
+    <description>Recent content in Recommend on Oh, fixed it</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Sun, 25 Aug 2019 16:45:57 +0700</lastBuildDate>
     
-	<atom:link href="https://HBTghost.github.io/tags/recommend/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ohfix.github.io/tags/recommend/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>C&#43;&#43; New Line Syntax</title>
-      <link>https://HBTghost.github.io/posts/coding/c&#43;&#43;/cpp-new-line-syntax/</link>
+      <link>https://ohfix.github.io/posts/coding/c&#43;&#43;/cpp-new-line-syntax/</link>
       <pubDate>Sun, 25 Aug 2019 16:45:57 +0700</pubDate>
       
-      <guid>https://HBTghost.github.io/posts/coding/c&#43;&#43;/cpp-new-line-syntax/</guid>
+      <guid>https://ohfix.github.io/posts/coding/c&#43;&#43;/cpp-new-line-syntax/</guid>
       <description>Rule Prefer &#39;\n&#39; or &amp;quot;\n&amp;quot; to std::endl.
 Reason The std::endl manipulator is mostly equivalent to &#39;\n&#39; and &amp;quot;\n&amp;quot;; as most commonly used it simply slows down output by doing redundant flush()s. This slowdown can be significant compared to printf-style output.
 Example std::cout &amp;lt;&amp;lt; &amp;#34;Hello, World!&amp;#34; &amp;lt;&amp;lt; std::endl; // two output operations and a flush std::cout &amp;lt;&amp;lt; &amp;#34;Hello, World!\n&amp;#34;; // one output operation and no flush  Note  For cin / cout (and equivalent) interaction, there is no reason to flush; that&amp;rsquo;s done automatically.</description>
@@ -25,19 +25,19 @@ Example std::cout &amp;lt;&amp;lt; &amp;#34;Hello, World!&amp;#34; &amp;lt;&amp;
     
     <item>
       <title>C&#43;&#43; Initialize Syntax</title>
-      <link>https://HBTghost.github.io/posts/coding/c&#43;&#43;/cpp-initialize-syntax/</link>
+      <link>https://ohfix.github.io/posts/coding/c&#43;&#43;/cpp-initialize-syntax/</link>
       <pubDate>Fri, 23 Aug 2019 15:57:38 +0700</pubDate>
       
-      <guid>https://HBTghost.github.io/posts/coding/c&#43;&#43;/cpp-initialize-syntax/</guid>
+      <guid>https://ohfix.github.io/posts/coding/c&#43;&#43;/cpp-initialize-syntax/</guid>
       <description>Rule  Prefer the {}-initializer syntax. Avoid () initialization, which allows parsing ambiguities.  Reason  The rules for {} initialization are simpler, more general, less ambiguous, and safer than for other forms of initialization. Use = only when you are sure that there can be no narrowing conversions. For built-in arithmetic types, use = only with auto.  Example int x {7.9}; // error: narrowing int y (7.9); // OK: y becomes 7.</description>
     </item>
     
     <item>
       <title>C&#43;&#43; Represent Null Pointer</title>
-      <link>https://HBTghost.github.io/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</link>
+      <link>https://ohfix.github.io/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</link>
       <pubDate>Mon, 19 Aug 2019 19:43:53 +0700</pubDate>
       
-      <guid>https://HBTghost.github.io/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</guid>
+      <guid>https://ohfix.github.io/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</guid>
       <description>Rule Use nullptr rather than 0 or NULL.
 Reason  Readability. Because C++ define NULL is an const type int has value 0, that can lead to wrong in some situations like the following example. Minimize surprises: nullptr cannot be confused with an int, since it is defined as a null pointer.
  Therefore, nullptr has a well-specified (very restrictive) type, and thus works in more scenarios where type deduction might do the wrong thing on NULL or 0 .</description>

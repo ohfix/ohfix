@@ -38,7 +38,6 @@
 
 
   var searchQuery = param("s");
-  $('#search-results').replaceWith("<h3 style='color: red'>{{ i18n "enter" .}}</h3>");
   if(searchQuery){
     $("#search-query").val(searchQuery);
     executeSearch(searchQuery);
@@ -135,49 +134,64 @@
       .search {
         margin-top: 20%;
         text-align: center;
-        width: 2.8cm;
+        width: 2cm;
+        height: 2cm;
         transition: all .5s ease;
-        border-radius: 4px;
+        border-radius: 50%;
         border: none;
-        padding: 4px 0.1cm;
         outline: none;
-        background-color: #ddd;
-        color: #000
+        background-color: #ccc;
+        color: #000;
+        font-size: 1.4cm;
       }
       .search:focus {
+        border-radius: 8cm;
         margin-top: 3%;
-        width: 6cm;
+        width: 8cm;
+        height: 40px;
+        font-size: 16px;
+        font-weight: bold;
       }
       .searchM {
         display: none;
       }
+      :focus::-moz-placeholder{
+           text-indent: -999px
+      }
+      :focus::-webkit-input-placeholder{
+           text-indent: -999px
+      }
       }
       @media (max-width: 760px) {
       .searchM {
-        display: inline-block;
         margin-top: 70%;
         text-align: center;
-        width: 2.8cm;
+        width: 4cm;
         transition: all .5s ease;
-        border-radius: 4px;
+        border-radius: 2cm;
         border: none;
-        padding: 4px 0.1cm;
         outline: none;
-        background-color: #ddd;
-        color: #000
+        background-color: #ccc;
+        color: #000;
+        font-weight: bold;
+        height: 40px;
+        font-size: 16px;
       }
       .searchM:focus {
+        border-radius: 8cm;
         margin-top: 10%;
-        width: 6cm;
+        width: 8cm;
+
       }
       }
     </style>
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <form action="{{ "search" | absLangURL }}" autocomplete="off">
-      <input id="search-query" name="s"placeholder="{{ i18n "enter" .}}" class="search hide-in-mobile" />
+      <input id="search-query" name="s"placeholder="&#129488;" class="search hide-in-mobile" />
     </form>
     <form action="{{ "search" | absLangURL }}" autocomplete="off">
-      <input id="search-query" name="s"placeholder="{{ i18n "enter" .}}" class="searchM" />
+      <input id="search-query" name="s"placeholder="{{ i18n "searching" . }}" class="searchM" />
     </form>
 
     <div id="search-results"> </div>

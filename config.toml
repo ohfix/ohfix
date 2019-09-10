@@ -1,7 +1,7 @@
-baseURL = "https://HBTghost.github.io"
+baseURL = "https://ohfix.github.io"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "Nano Guides"
+title = "Oh, fixed it"
 theme = "hermit"
 enableGitInfo = true
 pygmentsCodefences  = true
@@ -11,14 +11,13 @@ rssLimit = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
 googleAnalytics = "UA-125057333-1"
-# disqusShortname = "hbtghost-github-io"
 
 [languages]
   [languages.en]
     weight = 1
     languageName = "en"
     contentDir = "content/en"
-    # homeSubtitle = "Just some helpful Guidelines"
+    # homeSubtitle = "Fix it"
   [[languages.en.menu.main]]
     name = "Posts"
     url = "posts/"
@@ -40,7 +39,6 @@ googleAnalytics = "UA-125057333-1"
     weight = 2
     languageName = "jp"
     contentDir = "content/jp"
-    # homeSubtitle = "役に立つガイドライン"
     [[languages.jp.menu.main]]
     name = "投稿"
     url = "posts/"
@@ -62,7 +60,6 @@ googleAnalytics = "UA-125057333-1"
     weight = 2
     languageName = "vi"
     contentDir = "content/vi"
-    # homeSubtitle = "Chỉ là một số Hướng dẫn hữu ích"
     [[languages.vi.menu.main]]
     name = "Bài viết"
     url = "posts/"
@@ -92,8 +89,6 @@ googleAnalytics = "UA-125057333-1"
   tag = "tags"
   category = "categories"
   series = "series"
-  # series = "series"
-  # Categories are disabled by default.
 
 [params]
   dateform        = "January 2, 2006"
@@ -108,18 +103,16 @@ googleAnalytics = "UA-125057333-1"
   images = ["apple-touch-icon.png"]
 
   bgImg = "https://wallpapershome.com/images/pages/pic_h/18883.jpg"
-  gitUrl = "https://github.com/HBTghost/HBTghost-github-io"
+  # gitUrl = "https://github.com/ohfix/ohfix-github-io"
 
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  # bgImg = ""  # Homepage background-image URL
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  # gitUrl = "https://github.com/username/repository/commit/"
 
   # Toggling this option needs to rebuild SCSS, requires Hugo extended version
-  justifyContent = false  # Set "text-align: justify" to `.content`.
+  justifyContent = true  # Set "text-align: justify" to `.content`.
 
-  relatedPosts = false  # Add a related content section to all single posts page
+  relatedPosts = true  # Add a related content section to all single posts page
 
   # Add custom css
   # customCSS = ["css/foo.css", "css/bar.css"]
@@ -140,16 +133,6 @@ googleAnalytics = "UA-125057333-1"
 
   [[params.social]]
     name = "email"
-    url = "mailto:18127208@student.hcmus.edu.vn?subject=Nano Guides: "
-  [params.algolia]
-  vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
-  params = ["categories", "tags"]
-
-[outputFormats.Algolia]
-baseName = "algolia"
-isPlainText = true
-mediaType = "application/json"
-notAlternative = true
-
+    url = "mailto:hacbangtam@gmail.com?subject=Oh, fixed it: "
 [outputs]
   home = ["HTML", "RSS", "JSON"]

@@ -1,0 +1,50 @@
+<style>
+	.search {
+		text-align: center;
+		transition: all .5s ease;
+		border-radius: 50%;
+		border: none;
+		outline: none;
+		background-color: #494f5c;
+		color: #fff;
+		position: absolute;
+		opacity: 0;
+		width: 55px;
+		height: 55px;
+	}
+	@media (min-width: 760px) {
+		.search {
+			margin-top: 14px;
+		}
+		.search:focus {
+			width: 50%;
+			left: 25%;
+		}
+	}
+	@media (max-width: 760px) {
+		.search {
+			margin-top: 16px;
+		}
+		.search:focus {
+			width: 90%;
+			left: 5%;
+		}
+	}
+	.search:focus {
+		border-radius: 8.4cm;
+		font-size: 20px;
+		font-weight: bold;
+		opacity: 0.98;
+	}
+	:focus::-moz-placeholder{
+		opacity: 0.4;
+		color: #fff;
+	}
+	:focus::-webkit-input-placeholder{
+		opacity: 0.4;
+		color: #fff;
+	}
+</style>
+<form action="{{ "search" | absLangURL }}" autocomplete="off">
+	<input id="search-query" name="s"placeholder="{{ i18n "enter" .}}" class="search" />
+</form>

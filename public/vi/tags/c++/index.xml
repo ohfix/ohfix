@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>C&#43;&#43; on Nano Guides</title>
-    <link>https://HBTghost.github.io/vi/tags/c&#43;&#43;/</link>
-    <description>Recent content in C&#43;&#43; on Nano Guides</description>
+    <title>C&#43;&#43; on Oh, fixed it</title>
+    <link>https://ohfix.github.io/vi/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on Oh, fixed it</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Sun, 25 Aug 2019 16:45:57 +0700</lastBuildDate>
     
-	<atom:link href="https://HBTghost.github.io/vi/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ohfix.github.io/vi/tags/c++/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>C&#43;&#43; Cú pháp Xuống dòng</title>
-      <link>https://HBTghost.github.io/vi/posts/coding/c&#43;&#43;/cpp-new-line-syntax/</link>
+      <link>https://ohfix.github.io/vi/posts/coding/c&#43;&#43;/cpp-new-line-syntax/</link>
       <pubDate>Sun, 25 Aug 2019 16:45:57 +0700</pubDate>
       
-      <guid>https://HBTghost.github.io/vi/posts/coding/c&#43;&#43;/cpp-new-line-syntax/</guid>
+      <guid>https://ohfix.github.io/vi/posts/coding/c&#43;&#43;/cpp-new-line-syntax/</guid>
       <description>Nguyên tắc Thích &#39;\n&#39; hay &amp;quot;\n&amp;quot; hơn std::endl.
 Lý do Từ khóa điều khiển std::endl hầu hết tương đương với &#39;\n&#39; và &amp;quot;\n&amp;quot;; khi được sử dụng thường xuyên, hầu hết nó chỉ đơn giản là làm chậm đầu ra bằng cách thực hiện flush() s dự phòng. Sự chậm lại này có thể là đáng kể so với đầu ra kiểu printf.
 Ví dụ std::cout &amp;lt;&amp;lt; &amp;#34;Hello, World!&amp;#34; &amp;lt;&amp;lt; std::endl; // 2 toán tử xuất và 1 flush std::cout &amp;lt;&amp;lt; &amp;#34;Hello, World!</description>
@@ -25,19 +25,19 @@ Ví dụ std::cout &amp;lt;&amp;lt; &amp;#34;Hello, World!&amp;#34; &amp;lt;&amp
     
     <item>
       <title>C&#43;&#43; Cú pháp Khởi tạo</title>
-      <link>https://HBTghost.github.io/vi/posts/coding/c&#43;&#43;/cpp-initialize-syntax/</link>
+      <link>https://ohfix.github.io/vi/posts/coding/c&#43;&#43;/cpp-initialize-syntax/</link>
       <pubDate>Fri, 23 Aug 2019 15:57:38 +0700</pubDate>
       
-      <guid>https://HBTghost.github.io/vi/posts/coding/c&#43;&#43;/cpp-initialize-syntax/</guid>
+      <guid>https://ohfix.github.io/vi/posts/coding/c&#43;&#43;/cpp-initialize-syntax/</guid>
       <description>Quy tắc  Thích cú pháp khởi tạo {}. Tránh cú pháp khởi tạo (), vì nó cho phép phân tích cú pháp mơ hồ.  Lý do  Các quy tắc cho khởi tạo {} đơn giản hơn, tổng quát hơn, ít mơ hồ hơn và an toàn hơn so với các hình thức khởi tạo khác. Chỉ sử dụng = khi các bạn chắc chắn rằng không thể có chuyển đổi hẹp.</description>
     </item>
     
     <item>
       <title>C&#43;&#43; Biểu diễn Con trỏ Rỗng</title>
-      <link>https://HBTghost.github.io/vi/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</link>
+      <link>https://ohfix.github.io/vi/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</link>
       <pubDate>Mon, 19 Aug 2019 19:43:53 +0700</pubDate>
       
-      <guid>https://HBTghost.github.io/vi/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</guid>
+      <guid>https://ohfix.github.io/vi/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</guid>
       <description>Quy tắc Dùng nullptr thay vì 0 hay NULL.
 Lý do  Dễ đọc. Vì C++ định nghĩa NULL là một hằng số kiểu int có giá trị 0, điều này có thễ dẫn đến sai sót trong một số trường hợp như ví dụ bên dưới. Giảm thiểu bất ngờ: nullptr không gây bối rối như NULL, do nó được định nghĩa là một con trỏ rỗng.
  Thế nên, nullptr có kiểu được quy định rõ (rất hạn chế), và do vậy hoạt động tốt trong nhiều bối cảnh nơi mà type deduction có thể sai trên NULL hay 0 .</description>

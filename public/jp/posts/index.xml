@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Posts on Nano Guides</title>
-		<link>https://HBTghost.github.io/jp/posts/</link>
-		<description>Recent content in Posts on Nano Guides</description>
+		<title>Posts on Oh, fixed it</title>
+		<link>https://ohfix.github.io/jp/posts/</link>
+		<description>Recent content in Posts on Oh, fixed it</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
 		<lastBuildDate>Sun, 25 Aug 2019 16:45:57 +0700</lastBuildDate>
-		<atom:link href="https://HBTghost.github.io/jp/posts/index.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="https://ohfix.github.io/jp/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>C&#43;&#43; 改行構文</title>
-			<link>https://HBTghost.github.io/jp/posts/coding/c&#43;&#43;/cpp-new-line-syntax/</link>
+			<link>https://ohfix.github.io/jp/posts/coding/c&#43;&#43;/cpp-new-line-syntax/</link>
 			<pubDate>Sun, 25 Aug 2019 16:45:57 +0700</pubDate>
 			
-			<guid>https://HBTghost.github.io/jp/posts/coding/c&#43;&#43;/cpp-new-line-syntax/</guid>
+			<guid>https://ohfix.github.io/jp/posts/coding/c&#43;&#43;/cpp-new-line-syntax/</guid>
 			<description>ルール std::endl よりも &#39;\n&#39; または &amp;quot;\n&amp;quot; を優先してください。 理由 std::endl マニピュレータは、ほとんどが &#39;\n&#39; および &amp;quot;\n&amp;quot; と同等です。 最も一般的に使用されるように、冗長な fl</description>
 			<content type="html"><![CDATA[
 
@@ -47,10 +47,10 @@ The C++ Core Guidelines
 		
 		<item>
 			<title>C&#43;&#43; 構文の初期化</title>
-			<link>https://HBTghost.github.io/jp/posts/coding/c&#43;&#43;/cpp-initialize-syntax/</link>
+			<link>https://ohfix.github.io/jp/posts/coding/c&#43;&#43;/cpp-initialize-syntax/</link>
 			<pubDate>Fri, 23 Aug 2019 15:57:38 +0700</pubDate>
 			
-			<guid>https://HBTghost.github.io/jp/posts/coding/c&#43;&#43;/cpp-initialize-syntax/</guid>
+			<guid>https://ohfix.github.io/jp/posts/coding/c&#43;&#43;/cpp-initialize-syntax/</guid>
 			<description>ルール {}-初期化構文を優先します。 あいまいさの解析を可能にする ()初期化を避けます。 理由 {} の初期化のルールは、他の形式の初期化よりも単純で</description>
 			<content type="html"><![CDATA[
 
@@ -96,10 +96,10 @@ The C++ Core Guidelines
 		
 		<item>
 			<title>C&#43;&#43; ヌルポインターを表す</title>
-			<link>https://HBTghost.github.io/jp/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</link>
+			<link>https://ohfix.github.io/jp/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</link>
 			<pubDate>Mon, 19 Aug 2019 19:43:53 +0700</pubDate>
 			
-			<guid>https://HBTghost.github.io/jp/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</guid>
+			<guid>https://ohfix.github.io/jp/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</guid>
 			<description>ルール つかいます nullptr つかいます 0 または NULL。 理由 読みやすさ。C++ で定義されている NULL は const 型であるため、int の値は 0 であるため、次の例のよ</description>
 			<content type="html"><![CDATA[
 

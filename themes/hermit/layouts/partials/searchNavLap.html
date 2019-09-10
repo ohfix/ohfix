@@ -1,0 +1,25 @@
+<style>
+	@media (min-width: 760px) {
+	.searchNav {
+		text-align: center;
+		width: 2.2cm;
+		transition: all .5s ease;
+		border-radius: 4px 4px 0 0;
+		border-color: white;
+		border-width: 0 0 0.4px 0;
+		outline: none;
+		background-color: #3b3e48;
+		color: white;
+		display: inline-block;
+		padding: 4px 2px;
+	}
+	.searchNav:focus {
+		border-color: #3498DB;
+		width: 5cm;
+		font-weight: bold;
+	}
+	}
+</style>
+<form action="{{ "search" | absLangURL }}"class="hide-in-mobile">
+	<input id="search-query" name="s"placeholder="{{ i18n "search" . }}" class="searchNav" />
+</form>

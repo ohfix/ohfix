@@ -4,6 +4,10 @@
 [noPage]
 other = "Không tìm thấy trang phù hợp"
 [enter]
+other = "Tìm kiếm bài viết"
+[searching]
+other = "Đang tìm kiếm..."
+[search]
 other = "Tìm kiếm"
 [pageMatch]
 other = "Trang phù hợp"

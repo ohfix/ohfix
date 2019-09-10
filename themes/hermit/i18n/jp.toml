@@ -4,6 +4,10 @@
 [noPage]
 other = "一致するページが見つかりません"
 [enter]
+other = "投稿を検索"
+[searching]
+other = "検索しています..."
+[search]
 other = "サーチ"
 [pageMatch]
 other = "一致するページ"
