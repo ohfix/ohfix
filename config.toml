@@ -99,7 +99,7 @@ googleAnalytics = "UA-125057333-1"
 
   # Metadata mostly used in document's head
   # description = ""
-  # themeColor = "#494f5c"
+  themeColor = "#494f5c"
   images = ["apple-touch-icon.png"]
 
   bgImg = "https://wallpapershome.com/images/pages/pic_h/18883.jpg"

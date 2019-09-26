@@ -5,7 +5,7 @@
 			font-size: 14px;
 		}
 	}
-	@media (max-width: 760px) {
+	@media (max-width: 400px) {
 		.relate {
 			margin-left: -8%;
 		}
@@ -13,8 +13,8 @@
 </style>
 {{- $related := .Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
-<h3 style="margin-bottom: -15px; margin-top: -10px">{{ i18n "seeAlso" }}</h3>
-<div class="related-posts thin">
+<h3 id="seee">{{ i18n "seeAlso" }}</h3>
+<div class="related-posts thin" style="margin-bottom: 20px">
 	<ul class="relate" style="margin-top: -3px; margin-bottom: -1px">
 	{{ range . }}
 	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>

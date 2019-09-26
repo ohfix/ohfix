@@ -36,25 +36,8 @@
 				align-items: center;
 				vertical-align: center;
 				border-radius: 50%;
+				margin-top: 100px;
 			}
-			.overlay {
-				position: absolute;
-				border-radius: 50%;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: rgba(0, 0, 0, 0);
-				transition: background 0.5s ease;
-			}
-
-			.container:hover .overlay {
-				display: block;
-				animation: ham 0.4s 1;
-				animation-direction: alternate;
-				background: rgba(0, 0, 0, .7);
-			}
-
 			img {
 				position: absolute;
 				width: 200px;
@@ -64,55 +47,12 @@
 
 			@media (max-width: 760px) {
 				.container {
-					margin-top: -70px;
+					margin-top: 50px;
 				}
-			}
-			.button {
-				position: absolute;
-				left: 40%;
-				right: 40%;
-				top: 70px;
-				opacity: 0;
-				font-size: 40px;
-			}
-			@keyframes skew {
-				0% {
-					transform: skewX(-5deg);
-				}
-				50% {
-					transform: skewX(5deg);
-				}
-			}
-			@keyframes ham {
-				0% {
-					transform: scale(1);
-				}
-				50% {
-					transform: scale(0);
-				}
-				100% {
-					transform: scale(1);
-				}
-			}
-
-			.container:hover .button {
-				transition-delay: 0.3s;
-				animation: skew 0.5s infinite;
-				animation-direction: alternate;
-				animation-delay: 0.4s;
-				opacity: 1;
-			}
-			.container:hover .button:hover {
-				animation-play-state: paused;
 			}
 		</style>
 		<div class="container">
 			<img src="https://avatars3.githubusercontent.com/u/55048462?s=400&u=8ef603c9518ca04c268455a467e6570490aac72e&v=4" alt="author">
-			<div class="overlay"></div>
-			<div class="button">
-				<a href="https://github.com/ohfix/ohfix.github.io.git" target="_blank" rel="noopener me" title="Source" style="color: #3498DB"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-</a>
-			</div>
 		</div>
 		{{ partialCached "searchO.html" . }}
 		<a href="{{ .Site.BaseURL }}"><h1 id="home-title" style=""><span style="color: #3498DB">O</span>h, fixed it</h1></a>

@@ -130,69 +130,22 @@
 <section class="resume-section p-3 p-lg-5 d-flex flex-column" style="text-align: center;">
   <div class="my-auto" >
     <style>
-      @media (min-width: 760px) {
-      .search {
-        margin-top: 20%;
-        text-align: center;
-        width: 2cm;
-        height: 2cm;
-        transition: all .5s ease;
-        border-radius: 50%;
-        border: none;
-        outline: none;
-        background-color: #ccc;
-        color: #000;
-        font-size: 1.4cm;
-      }
-      .search:focus {
-        border-radius: 8cm;
-        margin-top: 3%;
-        width: 8cm;
-        height: 40px;
-        font-size: 16px;
-        font-weight: bold;
-      }
-      .searchM {
-        display: none;
-      }
-      :focus::-moz-placeholder{
-           text-indent: -999px
-      }
-      :focus::-webkit-input-placeholder{
-           text-indent: -999px
-      }
-      }
       @media (max-width: 760px) {
-      .searchM {
-        margin-top: 70%;
-        text-align: center;
-        width: 4cm;
-        transition: all .5s ease;
-        border-radius: 2cm;
-        border: none;
-        outline: none;
-        background-color: #ccc;
-        color: #000;
-        font-weight: bold;
-        height: 40px;
-        font-size: 16px;
+        #formS {
+          margin-top: 10%;
+        }
       }
-      .searchM:focus {
-        border-radius: 8cm;
-        margin-top: 10%;
-        width: 8cm;
-
-      }
+      @media (min-width: 760px) {
+        #formS {
+          margin-top: 5%;
+        }
       }
     </style>
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <form action="{{ "search" | absLangURL }}" autocomplete="off">
-      <input id="search-query" name="s"placeholder="&#129488;" class="search hide-in-mobile" />
+    <h2>
+    <form action="{{ "search" | absLangURL }}" autocomplete="off" id="formS">
+      <span class="search-container"><input class="search-input"id="search-query" name="s" placeholder="{{ i18n "enter" .}}"> <i class="fas fa-search"> </i></span>
     </form>
-    <form action="{{ "search" | absLangURL }}" autocomplete="off">
-      <input id="search-query" name="s"placeholder="{{ i18n "searching" . }}" class="searchM" />
-    </form>
+    </h2>
 
     <div id="search-results"> </div>
   </div>

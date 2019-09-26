@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ポインタ on Oh, fixed it</title>
+    <link>https://ohfix.github.io/jp/tags/%E3%83%9D%E3%82%A4%E3%83%B3%E3%82%BF/</link>
+    <description>Recent content in ポインタ on Oh, fixed it</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 19 Aug 2019 19:43:53 +0700</lastBuildDate>
+    
+	<atom:link href="https://ohfix.github.io/jp/tags/%E3%83%9D%E3%82%A4%E3%83%B3%E3%82%BF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>C&#43;&#43; ヌルポインターを表す</title>
+      <link>https://ohfix.github.io/jp/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</link>
+      <pubDate>Mon, 19 Aug 2019 19:43:53 +0700</pubDate>
+      
+      <guid>https://ohfix.github.io/jp/posts/coding/c&#43;&#43;/cpp-represent-null-pointer/</guid>
+      <description>ルール つかいます nullptr つかいます 0 または NULL。 理由 読みやすさ。C++ で定義されている NULL は const 型であるため、int の値は 0 であるため、次の例のよ</description>
+    </item>
+    
+  </channel>
+</rss>
