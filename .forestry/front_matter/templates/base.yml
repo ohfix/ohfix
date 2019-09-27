@@ -23,3 +23,5 @@ fields:
 - type: list
   name: series
   label: series
+pages:
+- content/en/posts/coding/C++/c-just-test.md
