@@ -23,5 +23,3 @@ fields:
 - type: list
   name: series
   label: series
-pages:
-- content/en/posts/coding/C++/test-on-phone.md
