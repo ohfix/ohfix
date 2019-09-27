@@ -1,19 +1,18 @@
 ---
-title: "C++ Trigger Test"
-date: 2019-09-25T16:45:57+07:00
-draft: false
+title: C++ Just Test
+date: 2019-09-25T09:45:57.000+00:00
 toc: true
 images:
-  - https://picsum.photos/1024/768/?random
-tags: 
-  - C++
-  - Recommend
+- https://picsum.photos/1024/768/?random
+tags:
+- C++
+- Recommend
 categories:
-  - Coding
+- Coding
 series:
-  - C++
----
+- C++
 
+---
 ## Rule
 
 Prefer `'\n'` or `"\n"` to `std::endl`.
