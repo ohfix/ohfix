@@ -19,8 +19,6 @@ toc = true
 * Chế độ chia màn hình:
   * Một trong những tính năng mới tuyệt vời nhất trong Windows 8.1 là chế độ chia màn hình, nó cho phép bạn tách giao diện Modern UI ra làm 2 đến 4 cửa sổ, mỗi cửa sổ mở một ứng dụng riêng.
   * Không giống như chế độ desktop, các cửa sổ này không trôi. Bạn có thể điều chỉnh kích thước của các cửa sổ bằng cách kéo viền của chúng sang trái hoặc phải.
-
-
 * Tìm kiếm:
   * Mặc định tìm kiếm ở tất cả các nội dung trên cùng một lúc, chẳng hạn: file, ứng dụng, web, vv
   * Kết quả sẽ được chia ra và phân loại chứ không chỉ hiển thị kết quả dưới dạng danh sách ngang hoặc dọc.
