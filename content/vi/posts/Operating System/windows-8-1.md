@@ -29,6 +29,15 @@ toc = true
 
 * Sắp bị ngừng hỗ trợ
 
+![](/uploads/1901340.jpg)
+
+* Theo thông tin từ MicroSoft, đến tháng 01/2023, Windows 8.1 cũng sẽ không còn nhận được các bản cập nhật quan trọng. Và giống như Windows 7, phiên bản này cũng đã ngừng hỗ trợ chính thức.
+* Thông thường, khi đến lúc End of Service, các chương trình khác cũng ngừng hỗ trợ cho các phiên bản Windows đó. Vì thế, các lỗ hổng vẫn sẽ tồn tại trong hệ điều hành và cả phần mềm bạn đã cài đặt. Do vậy, máy sẽ không còn được bảo mật tốt.
+* 
+
+
+* Sắp bị ngừng hỗ trợ
+
   ![](/uploads/1901340.jpg)
   * Theo thông tin từ MicroSoft, đến tháng 01/2023, Windows 8.1 cũng sẽ không còn nhận được các bản cập nhật quan trọng. Và giống như Windows 7, phiên bản này cũng đã ngừng hỗ trợ chính thức.
   * Thông thường, khi đến lúc End of Service, các chương trình khác cũng ngừng hỗ trợ cho các phiên bản Windows đó. Vì thế, các lỗ hổng vẫn sẽ tồn tại trong hệ điều hành và cả phần mềm bạn đã cài đặt. Do vậy, máy sẽ không còn được bảo mật tốt.
