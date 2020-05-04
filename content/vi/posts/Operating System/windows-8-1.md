@@ -1,17 +1,16 @@
 ---
-title: "Windows 8.1"
-date: 2020-05-03T17:00:00Z
-draft: false
-images: []
-toc: true
+title: Windows 8.1
+date: 2020-05-03T17:00:00.000+00:00
 images:
-  - https://picsum.photos/1024/768/?random
-tags: 
-  - OS
+- https://picsum.photos/1024/768/?random
+toc: true
+tags:
+- OS
 categories:
-  - Viết lách
+- Viết lách
 series:
-  - OS
+- OS
+draft: true
 
 ---
 **I. Tổng quan**
@@ -36,11 +35,17 @@ series:
 * **Sắp bị ngừng hỗ trợ**
 
   ![](/uploads/unSupportWin.jpg)
+  
   * Theo thông tin từ MicroSoft, đến tháng 01/2023, Windows 8.1 cũng sẽ không còn nhận được các bản cập nhật quan trọng. Và giống như Windows 7, phiên bản này cũng đã ngừng hỗ trợ chính thức.
+  
   * Thông thường, khi đến lúc End of Service, các chương trình khác cũng ngừng hỗ trợ cho các phiên bản Windows đó. Vì thế, các lỗ hổng vẫn sẽ tồn tại trong hệ điều hành và cả phần mềm bạn đã cài đặt. Do vậy, máy sẽ không còn được bảo mật tốt.
+  
 * Start Menu tệ
+
   * Như đã nêu ở mục Tổng quan, Windows 8.1 không có một Start Menu thực sự và Microsoft đã thay nó bằng Start Screen.
+  
   * Mặc dù được cập nhật thêm nút Start so với Windows 8, nhưng nó chỉ có tác dụng đưa vào màn hình Start Screen, hoạt động không tốt như Menu Screen như của Win 7 hoặc Win 10
+  
 * Một điểm đáng thất vọng nữa đó chính là Windows 8.1 không hỗ trợ các vi xử lý đời mới
   * Thông báo "Unsupported Hardware" sẽ hiện ra nếu bạn đang sử dụng các loại chip CPU Intel 7th trở lên hoặc Ryzen mới của AMD.
   * Nếu Windows phát hiện cỗ máy của bạn sử dụng phần cứng mới, nó sẽ ngăn chặn ngay các bản cập nhật.
