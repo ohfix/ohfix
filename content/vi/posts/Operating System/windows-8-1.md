@@ -28,6 +28,8 @@ toc = true
 **III. Nhược điểm**
 
 * **Sắp bị ngừng hỗ trợ**
+
+  ![](/uploads/1901340.jpg)
   * Theo thông tin từ MicroSoft, đến tháng 01/2023, Windows 8.1 cũng sẽ không còn nhận được các bản cập nhật quan trọng. Và giống như Windows 7, phiên bản này cũng đã ngừng hỗ trợ chính thức.
   * Thông thường, khi đến lúc End of Service, các chương trình khác cũng ngừng hỗ trợ cho các phiên bản Windows đó. Vì thế, các lỗ hổng vẫn sẽ tồn tại trong hệ điều hành và cả phần mềm bạn đã cài đặt. Do vậy, máy sẽ không còn được bảo mật tốt.
 * Start Menu tệ
@@ -42,4 +44,6 @@ toc = true
   * Thay vì sử dụng chế độ xem desktop riêng biệt, các ứng dụng được phóng to tối đa, chiếm toàn bộ màn hình, làm giảm đi tính linh hoạt cũng như gây nhiều bất tiện cho người dùng
 * Điều cuối cùng, cũng là điều khiến nhiều người không muốn chuyển sang phiên bản này, chính là bản quyền:
   * Microsoft không còn bán các key Windows 8.1, thế nên, việc mua một key bản quyền sẽ trở nên khó khăn hơn.
+
+  ![](/uploads/Screenshot from 2020-05-04 21-28-03.png)
   * Do đó, để mua các key kích hoạt, ta phải mua lại các key không chính thức từ bên thứ 3, điều này làm tăng rủi ro, "tền mất tật mang" !!
