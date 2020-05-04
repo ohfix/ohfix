@@ -1,7 +1,6 @@
 +++
 categories = []
 date = 2020-05-03T17:00:00Z
-draft = true
 images = []
 series = []
 tags = []
