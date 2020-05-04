@@ -11,6 +11,8 @@ toc = true
 +++
 **I. Tổng quan**
 
+![](/uploads/Windows_8.1_Start_screen.jpg)
+
 * Windows 8.1 là một trong những [hệ điều hành](https://vi.wikipedia.org/wiki/H%E1%BB%87_%C4%91i%E1%BB%81u_h%C3%A0nh) của [Microsoft](https://vi.wikipedia.org/wiki/Microsoft), là bản nâng cấp của Windows 8, là một phần của họ hệ điều hành Windows NT.
 * Sau khi giới thiệu và phát hành dưới dạng beta công cộng vào tháng 6 năm 2013, nó được [phát hành cho nhà sản xuất](https://vi.wikipedia.org/wiki/V%C3%B2ng_%C4%91%E1%BB%9Di_ph%C3%A1t_h%C3%A0nh_ph%E1%BA%A7n_m%E1%BB%81m#RTM) vào ngày 27 tháng 8 năm 2013 và phát hành rộng rãi vào ngày 17 tháng 10 năm 2013, gần một năm sau khi phiên bản trước của nó cho phát hành bán lẻ
 
