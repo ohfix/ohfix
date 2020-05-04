@@ -1,13 +1,19 @@
-+++
-categories = []
-date = 2020-05-03T17:00:00Z
-images = []
-series = []
-tags = []
-title = "Windows 8.1"
-toc = true
+---
+title: "Windows 8.1"
+date: 2020-05-03T17:00:00Z
+draft: false
+images: []
+toc: true
+images:
+  - https://picsum.photos/1024/768/?random
+tags: 
+  - OS
+categories:
+  - Viết lách
+series:
+  - OS
 
-+++
+---
 **I. Tổng quan**
 
 ![](/uploads/Windows_8.1_Start_screen.jpg)
@@ -29,7 +35,7 @@ toc = true
 
 * **Sắp bị ngừng hỗ trợ**
 
-  ![](/uploads/1901340.jpg)
+  ![](/uploads/unSupportWin.jpg)
   * Theo thông tin từ MicroSoft, đến tháng 01/2023, Windows 8.1 cũng sẽ không còn nhận được các bản cập nhật quan trọng. Và giống như Windows 7, phiên bản này cũng đã ngừng hỗ trợ chính thức.
   * Thông thường, khi đến lúc End of Service, các chương trình khác cũng ngừng hỗ trợ cho các phiên bản Windows đó. Vì thế, các lỗ hổng vẫn sẽ tồn tại trong hệ điều hành và cả phần mềm bạn đã cài đặt. Do vậy, máy sẽ không còn được bảo mật tốt.
 * Start Menu tệ
@@ -45,5 +51,5 @@ toc = true
 * Điều cuối cùng, cũng là điều khiến nhiều người không muốn chuyển sang phiên bản này, chính là bản quyền:
   * Microsoft không còn bán các key Windows 8.1, thế nên, việc mua một key bản quyền sẽ trở nên khó khăn hơn.
 
-  ![](/uploads/Screenshot from 2020-05-04 21-28-03.png)
+  ![](/uploads/buyKeyWin.png)
   * Do đó, để mua các key kích hoạt, ta phải mua lại các key không chính thức từ bên thứ 3, điều này làm tăng rủi ro, "tền mất tật mang" !!
