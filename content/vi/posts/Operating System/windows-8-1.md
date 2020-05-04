@@ -47,9 +47,3 @@ toc = true
 
     ![](/uploads/Screenshot from 2020-05-04 21-28-03.png)
   * Do đó, để mua các key kích hoạt, ta phải mua lại các key không chính thức từ bên thứ 3, điều này làm tăng rủi ro, "tền mất tật mang" !!
-    * aaa
-    * aaa
-  * aâa
-    * ládfádfádf
-    * aldsfkaldf
-    * adlfadfádf
