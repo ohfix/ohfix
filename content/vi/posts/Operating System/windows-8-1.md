@@ -10,7 +10,7 @@ categories:
 - Viết lách
 series:
 - OS
-
+draft: true
 ---
 **I. Tổng quan**
 
