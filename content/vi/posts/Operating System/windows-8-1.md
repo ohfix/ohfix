@@ -34,17 +34,11 @@ series:
 * **Sắp bị ngừng hỗ trợ**
 
   ![](/uploads/unSupportWin.jpg)
-  
   * Theo thông tin từ MicroSoft, đến tháng 01/2023, Windows 8.1 cũng sẽ không còn nhận được các bản cập nhật quan trọng. Và giống như Windows 7, phiên bản này cũng đã ngừng hỗ trợ chính thức.
-  
   * Thông thường, khi đến lúc End of Service, các chương trình khác cũng ngừng hỗ trợ cho các phiên bản Windows đó. Vì thế, các lỗ hổng vẫn sẽ tồn tại trong hệ điều hành và cả phần mềm bạn đã cài đặt. Do vậy, máy sẽ không còn được bảo mật tốt.
-  
 * Start Menu tệ
-
   * Như đã nêu ở mục Tổng quan, Windows 8.1 không có một Start Menu thực sự và Microsoft đã thay nó bằng Start Screen.
-  
   * Mặc dù được cập nhật thêm nút Start so với Windows 8, nhưng nó chỉ có tác dụng đưa vào màn hình Start Screen, hoạt động không tốt như Menu Screen như của Win 7 hoặc Win 10
-  
 * Một điểm đáng thất vọng nữa đó chính là Windows 8.1 không hỗ trợ các vi xử lý đời mới
   * Thông báo "Unsupported Hardware" sẽ hiện ra nếu bạn đang sử dụng các loại chip CPU Intel 7th trở lên hoặc Ryzen mới của AMD.
   * Nếu Windows phát hiện cỗ máy của bạn sử dụng phần cứng mới, nó sẽ ngăn chặn ngay các bản cập nhật.
@@ -53,7 +47,8 @@ series:
   * Tính năng này luôn áp dụng ngay cả các ứng dụng không cần thiết, chẳng hạn như Calculator.
   * Thay vì sử dụng chế độ xem desktop riêng biệt, các ứng dụng được phóng to tối đa, chiếm toàn bộ màn hình, làm giảm đi tính linh hoạt cũng như gây nhiều bất tiện cho người dùng
 * Điều cuối cùng, cũng là điều khiến nhiều người không muốn chuyển sang phiên bản này, chính là bản quyền:
-  * Microsoft không còn bán các key Windows 8.1, thế nên, việc mua một key bản quyền sẽ trở nên khó khăn hơn.
+  * Microsoft không còn bán các key dành cho Windows 8.1, thế nên, việc mua key bản quyền sẽ trở nên khó khăn hơn.
 
   ![](/uploads/buyKeyWin.png)
   * Do đó, để mua các key kích hoạt, ta phải mua lại các key không chính thức từ bên thứ 3, điều này làm tăng rủi ro, "tền mất tật mang" !!
+ 
