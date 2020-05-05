@@ -1,17 +1,15 @@
 ---
-title: "Windows 8.1"
-date: 2020-05-03T17:00:00Z
-draft: true
-images: []
-toc: true
+title: Windows 8.1
+date: 2020-05-03T17:00:00.000+00:00
 images:
-  - https://picsum.photos/1024/768/?random
-tags: 
-  - OS
+- https://picsum.photos/1024/768/?random
+toc: true
+tags:
+- OS
 categories:
-  - Viết lách
+- Viết lách
 series:
-  - OS
+- OS
 
 ---
 **I. Tổng quan**
@@ -49,7 +47,8 @@ series:
   * Tính năng này luôn áp dụng ngay cả các ứng dụng không cần thiết, chẳng hạn như Calculator.
   * Thay vì sử dụng chế độ xem desktop riêng biệt, các ứng dụng được phóng to tối đa, chiếm toàn bộ màn hình, làm giảm đi tính linh hoạt cũng như gây nhiều bất tiện cho người dùng
 * Điều cuối cùng, cũng là điều khiến nhiều người không muốn chuyển sang phiên bản này, chính là bản quyền:
-  * Microsoft không còn bán các key Windows 8.1, thế nên, việc mua một key bản quyền sẽ trở nên khó khăn hơn.
+  * Microsoft không còn bán các key dành cho Windows 8.1, thế nên, việc mua key bản quyền sẽ trở nên khó khăn hơn.
 
   ![](/uploads/buyKeyWin.png)
   * Do đó, để mua các key kích hoạt, ta phải mua lại các key không chính thức từ bên thứ 3, điều này làm tăng rủi ro, "tền mất tật mang" !!
+ 
