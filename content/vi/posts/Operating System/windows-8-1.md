@@ -11,10 +11,9 @@ categories:
 series:
 - OS
 draft: true
+
 ---
 **I. Tổng quan**
-
-![](/uploads/Windows_8.1_Start_screen.jpg)
 
 * Windows 8.1 là một trong những [hệ điều hành](https://vi.wikipedia.org/wiki/H%E1%BB%87_%C4%91i%E1%BB%81u_h%C3%A0nh) của [Microsoft](https://vi.wikipedia.org/wiki/Microsoft), là bản nâng cấp của Windows 8, là một phần của họ hệ điều hành Windows NT.
 * Sau khi giới thiệu và phát hành dưới dạng beta công cộng vào tháng 6 năm 2013, nó được [phát hành cho nhà sản xuất](https://vi.wikipedia.org/wiki/V%C3%B2ng_%C4%91%E1%BB%9Di_ph%C3%A1t_h%C3%A0nh_ph%E1%BA%A7n_m%E1%BB%81m#RTM) vào ngày 27 tháng 8 năm 2013 và phát hành rộng rãi vào ngày 17 tháng 10 năm 2013, gần một năm sau khi phiên bản trước của nó cho phát hành bán lẻ
@@ -32,8 +31,6 @@ draft: true
 **III. Nhược điểm**
 
 * **Sắp bị ngừng hỗ trợ**
-
-  ![](/uploads/unSupportWin.jpg)
   * Theo thông tin từ MicroSoft, đến tháng 01/2023, Windows 8.1 cũng sẽ không còn nhận được các bản cập nhật quan trọng. Và giống như Windows 7, phiên bản này cũng đã ngừng hỗ trợ chính thức.
   * Thông thường, khi đến lúc End of Service, các chương trình khác cũng ngừng hỗ trợ cho các phiên bản Windows đó. Vì thế, các lỗ hổng vẫn sẽ tồn tại trong hệ điều hành và cả phần mềm bạn đã cài đặt. Do vậy, máy sẽ không còn được bảo mật tốt.
 * Start Menu tệ
@@ -48,7 +45,4 @@ draft: true
   * Thay vì sử dụng chế độ xem desktop riêng biệt, các ứng dụng được phóng to tối đa, chiếm toàn bộ màn hình, làm giảm đi tính linh hoạt cũng như gây nhiều bất tiện cho người dùng
 * Điều cuối cùng, cũng là điều khiến nhiều người không muốn chuyển sang phiên bản này, chính là bản quyền:
   * Microsoft không còn bán các key dành cho Windows 8.1, thế nên, việc mua key bản quyền sẽ trở nên khó khăn hơn.
-
-  ![](/uploads/buyKeyWin.png)
   * Do đó, để mua các key kích hoạt, ta phải mua lại các key không chính thức từ bên thứ 3, điều này làm tăng rủi ro, "tền mất tật mang" !!
- 
