@@ -24,4 +24,5 @@ fields:
   name: series
   label: series
 pages:
+- content/vi/posts/Operating System/file-management.md
 - content/vi/posts/Operating System/windows-8-1.md
