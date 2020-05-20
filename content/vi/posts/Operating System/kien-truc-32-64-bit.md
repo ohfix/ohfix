@@ -1,19 +1,18 @@
 ---
-title: "Hệ điều hành 32 bit và 64 bit"
-date: 2020-05-04T17:00:00Z
-draft: false
-images: []
-toc: true
+title: Hệ điều hành 32 bit và 64 bit
+date: 2020-05-04T17:00:00.000+00:00
 images:
-  - https://picsum.photos/1024/768/?random
-tags: 
-  - OS
+- https://picsum.photos/1024/768/?random
+toc: true
+tags:
+- OS
 categories:
-  - Viết lách
+- Viết lách
 series:
-  - OS
----
+- OS
+draft: true
 
+---
 ## Lịch sử HĐH 32 bit
 
 * Là hệ điều hành chính, được sử dụng rộng rãi vào những năm đầu thập niên 90.
