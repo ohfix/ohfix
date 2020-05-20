@@ -1,7 +1,6 @@
 +++
 categories = []
 date = 2020-05-19T17:00:00Z
-draft = true
 images = []
 series = []
 tags = ["OS"]
