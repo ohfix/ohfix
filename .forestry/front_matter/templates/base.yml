@@ -24,5 +24,6 @@ fields:
   name: series
   label: series
 pages:
+- content/en/posts/coding/javascript/Vanila Javascript/lexical-structure.md
 - content/vi/posts/Operating System/file-management.md
 - content/vi/posts/Operating System/windows-8-1.md
