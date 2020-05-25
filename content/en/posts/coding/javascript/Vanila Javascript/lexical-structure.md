@@ -24,6 +24,6 @@ toc = true
 ### Using /_* */ for multi-line comment_
 
     // This is a single-line comment.
-    /* This is also a
+    /* This is a
        multi-line comment
     */
