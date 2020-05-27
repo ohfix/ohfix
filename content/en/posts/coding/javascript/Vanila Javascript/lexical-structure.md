@@ -3,7 +3,7 @@ categories = ["Javascript"]
 date = 2020-05-24T17:00:00Z
 images = []
 series = ["Javascript"]
-tags = ["Javasript basic", "Vanila Javascript", "Javascript"]
+tags = ["Javascript basic", "Vanila Javascript", "Javascript"]
 title = "Lexical Structure"
 toc = true
 
