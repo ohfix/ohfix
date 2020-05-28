@@ -26,7 +26,6 @@ toc = true
 * In ECMAScript 6 and later you can also express integers in binary (base 2) or octal (base 8) using the prefixes 0b and 0o (or 0B and 0O) instead of 0x
 
       0b10101  // => 21:  (116 + 08 + 14 + 02 + 11)
-      
       0o377    // => 255: (364 + 78 + 71)
 
 ### Floating-Point Literals
@@ -76,3 +75,33 @@ JavaScript programs work with numbers using the arithmetic operators that the la
       x === .1            // => false: .3-.2 is not equal to .1
       y === .1            // => true: .2-.1 is equal to .1
 * Because of rounding error, the difference between the approximations of .3 and .2 is not exactly the same as the difference between the approximations of .2 and .1. It is important to understand that this problem is not specific to JavaScript: it affects any programming language that uses binary floating-point numbers.
+
+### Arbitrary Precision Integers with BigInt
+
+* As the name implies, BigInt is a numeric type whose values are integers. The type was added to JavaScript mainly to allow the representation of 64-bit intergers.
+
+      1234n                // A not-so-big BigInt literal
+      0b111111n            // A binary BigInt
+      0o7777n              // An octal BigInt
+      0x8000000000000000n  // => 2n**63n: A 64-bit integer
+      //
+      BigInt(Number.MAX_SAFE_INTEGER)     // => 9007199254740991n
+      let string = "1" + "0".repeat(100); // 1 followed by 100 zeros.
+      BigInt(string)                      // => 10n**100n: one googol
+* Arithmetic with BigInt values works like arithmetic with regular JavaScript numbers, except that division drops any remainder and rounds down (toward zero).
+* **It is important to understand that you may not mix operands of type BigInt with regular number operands.**
+* Comparison operators, by contrast, do work with mixed numeric types:
+
+      1 < 2n     // => true
+      2 > 1n     // => true
+      0 == 0n    // => true
+      0 === 0n   // => false: the === checks for type equality as well
+
+### Dates and Times
+
+JavaScript Date are objects but they also have a numeric representation as a timestamp that specifies the number of elapsed milliseconds since January 1st, 1970:
+
+    let timestamp = Date.now();  // The current time as a timestamp (a number).
+    let now = new Date();        // The current time as a Date object.
+    let ms = now.getTime();      // Convert to a millisecond timestamp.
+    let iso = now.toISOString(); // Convert to a string in standard format.
