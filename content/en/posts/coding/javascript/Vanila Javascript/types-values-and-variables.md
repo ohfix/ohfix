@@ -105,3 +105,13 @@ JavaScript Date are objects but they also have a numeric representation as a tim
     let now = new Date();        // The current time as a Date object.
     let ms = now.getTime();      // Convert to a millisecond timestamp.
     let iso = now.toISOString(); // Convert to a string in standard format.
+
+# Text
+
+* A string is an immutable ordered sequence of 16-bit values, each of which typically represents a Unicode character. The length of a string is the number of 16-bit values it contains.
+* JavaScript does not have a special type that represents a single element of a string. To represent a single 16-bit value, simply use a string that has a length of 1.
+
+      let euro = "€";
+      let love = "💙";
+      euro.length   // => 1: this character has one 16-bit element
+      love.length   // => 2: UTF-16 encoding of 💙 is "\ud83d\udc99"
