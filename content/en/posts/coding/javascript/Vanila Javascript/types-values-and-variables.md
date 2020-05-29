@@ -23,7 +23,7 @@ toc = true
 
 * Decimal: 17, 1283,...
 * Hexadecimal: start with 0X or 0x, ex: 0xA2, 0xABFC136,...
-* In ECMAScript 6 and later you can also express integers in binary (base 2) or octal (base 8) using the prefixes 0b and 0o (or 0B and 0O) instead of 0x
+* In ECMAScript 6 and later you can also express integers in binary (base 2) or octal (base 8) using the prefixes 0b and 0o (or 0B and 0O) instead of 0x.
 
     0b10101  // => 21:  (116 + 08 + 14 + 02 + 11)
     0o377    // => 255: (364 + 78 + 71)
