@@ -121,4 +121,12 @@ JavaScript Date are objects but they also have a numeric representation as a tim
 * To include a string in a JavaScript program, simply enclose the characters of the string within a matched pair of single or double quotes or backticks (' or " or \`).
 * Strings delimited with backticks are a feature of ECMAScript 6, and allow JavaScript expressions to be embedded within (or interpolated into) the string literal.
 
-      // A one-line string written on 3 lines: "one\  long\  line"  // A two-line string written on two lines: `the newline character at the end of this line is included literally in this string`
+      // A one-line string written on 3 lines:
+      "one\
+      long\
+      line"
+      // A two-line string written on two lines:
+      `the newline character at the end of this line
+      is included literally in this string`
+      //
+      <button onclick="alert('Thank you')">Click Me</button>
