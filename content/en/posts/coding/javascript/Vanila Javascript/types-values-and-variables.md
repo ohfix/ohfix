@@ -25,8 +25,8 @@ toc = true
 * Hexadecimal: start with 0X or 0x, ex: 0xA2, 0xABFC136,...
 * In ECMAScript 6 and later you can also express integers in binary (base 2) or octal (base 8) using the prefixes 0b and 0o (or 0B and 0O) instead of 0x
 
-      0b10101  // => 21:  (116 + 08 + 14 + 02 + 11)
-      0o377    // => 255: (364 + 78 + 71)
+    0b10101  // => 21:  (116 + 08 + 14 + 02 + 11)
+    0o377    // => 255: (364 + 78 + 71)
 
 ### Floating-Point Literals
 
@@ -115,3 +115,10 @@ JavaScript Date are objects but they also have a numeric representation as a tim
       let love = "💙";
       euro.length   // => 1: this character has one 16-bit element
       love.length   // => 2: UTF-16 encoding of 💙 is "\ud83d\udc99"
+
+### String Literals
+
+* To include a string in a JavaScript program, simply enclose the characters of the string within a matched pair of single or double quotes or backticks (' or " or \`).
+* Strings delimited with backticks are a feature of ECMAScript 6, and allow JavaScript expressions to be embedded within (or interpolated into) the string literal.
+
+      // A one-line string written on 3 lines: "one\  long\  line"  // A two-line string written on two lines: `the newline character at the end of this line is included literally in this string`
