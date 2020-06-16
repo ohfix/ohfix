@@ -10,7 +10,6 @@ categories:
 - Viết lách
 series:
 - OS
-draft: true
 
 ---
 ## Lịch sử HĐH 32 bit
