@@ -1,7 +1,6 @@
 +++
 categories = ["Javascript"]
 date = 2020-05-24T17:00:00Z
-draft = true
 images = []
 series = ["Javascript"]
 tags = ["Javascript basic", "Vanila Javascript", "Javascript"]
