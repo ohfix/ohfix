@@ -62,6 +62,6 @@ toc = false
 * **Performance measure**: make decisions exactly and quickly, profit optimisms, improve user experience.
 * **Environment**: Web app, ad units, seller, buyer and web administrators
 * **Actuators**: display recommendations of product on screen, auto contact and support, collect user's data
-* **Sensors**: user's focus / click on specific products, user's answer with contact / support, products bought by specific user / entire web.
+* **Sensors**: user's focus / click on specific products, user's answer with AI's contact / support, products bought by specific user / entire web.
 
 #### The potential of AI in Sales is enormous and the demand is entirely possible in the future. So I hope through this course I can visualize more clearly so that someday AI in sales will be available in the AI application market in the future.
