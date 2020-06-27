@@ -24,6 +24,7 @@ fields:
   name: series
   label: series
 pages:
+- content/en/posts/coding/AI/describe-an-ai-solution.md
 - content/en/posts/coding/javascript/Vanila Javascript/lexical-structure.md
 - content/en/posts/coding/javascript/Vanila Javascript/types-values-and-variables-1.md
 - content/en/posts/coding/javascript/Vanila Javascript/types-values-and-variables.md
