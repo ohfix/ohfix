@@ -25,8 +25,8 @@ toc = true
 * Hexadecimal: start with 0X or 0x, ex: 0xA2, 0xABFC136,...
 * In ECMAScript 6 and later you can also express integers in binary (base 2) or octal (base 8) using the prefixes 0b and 0o (or 0B and 0O) instead of 0x.
 
-    0b10101  // => 21:  (116 + 08 + 14 + 02 + 11)
-    0o377    // => 255: (364 + 78 + 71)
+  0b10101  // => 21:  (116 + 08 + 14 + 02 + 11)
+  0o377    // => 255: (364 + 78 + 71)
 
 ### Floating-Point Literals
 
@@ -130,3 +130,20 @@ JavaScript Date are objects but they also have a numeric representation as a tim
       is included literally in this string`
       //
       <button onclick="alert('Thank you')">Click Me</button>
+
+  ### Escape Sequences in String Literals
+  * \\0 : The NULL character (\\u0000)
+  * \\b : Backspace (\\u0008)
+  * \\t : Horizontal tab (\\u0009)
+  * \\n : Newline (\\u000A)
+  * \\v : Vertical tab (\\u000B)
+  * \\f : Form feed (\\u000C)
+  * \\r : Carriage return (\\u000D)
+  * \\" : Double quote (\\u0022)
+  * \\' : Apostrophe or single quote (\\u0027)
+  * \\\\ : Backslash (\\u005C)
+  * \\xnn : The Unicode character specified by the two hexadecimal digits nn
+  * \\xnnnn : The Unicode character specified by the four hexadecimal digits nnnn
+  * \\u{n} : The Unicode character specified by the codepoint n, where n is one to six hexadecimal digits between 0 and 10FFFF. (ES6)
+
+If the \\ character precedes any character other than those shown, the backslash is simply ignored (although future versions of the language may, of course, define new escape sequences).
