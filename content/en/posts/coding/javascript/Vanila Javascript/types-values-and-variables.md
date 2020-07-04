@@ -147,3 +147,8 @@ JavaScript Date are objects but they also have a numeric representation as a tim
   * \\u{n} : The Unicode character specified by the codepoint n, where n is one to six hexadecimal digits between 0 and 10FFFF. (ES6)
 
 If the \\ character precedes any character other than those shown, the backslash is simply ignored (although future versions of the language may, of course, define new escape sequences).
+
+### Working with Strings
+
+    let msg = "Hello, " + "world";   // Produces the string "Hello, world"
+    let greeting = "Welcome to my blog," + " " + name;
