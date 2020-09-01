@@ -10,9 +10,16 @@ toc = true
 +++
 # Overview and Definitions
 
-* JavaScript types can be divided into two categories: primitive types and object types. JavaScript’s primitive types include numbers, strings of text (known as strings), and Boolean truth values (known as booleans). A significant portion of this blog is dedicated to a detailed explanation of the numeric, Boolean and string types in JavaScript.
-* The special JavaScript values null and undefined are primitive values, but they are not numbers, strings, or booleans. Each value is typically considered to be the sole member of its own special type.
+* JavaScript types can be divided into two categories: **primitive** types and **object** types. JavaScript’s primitive types include **numbers**, **strings** of text (known as strings), and **Boolean** truth values (known as booleans). A significant portion of this blog is dedicated to a detailed explanation of the numeric, Boolean and string types in JavaScript.
+* The special JavaScript values **null** and **undefined** are primitive values, but they are not numbers, strings, or booleans. Each value is typically considered to be the sole member of its own special type. ES6 adds a new special-purpose type, known as **Symbol**, that enables the definition of language extensions without harming backward compatibility.
 * Any JavaScript value that is not a number, a string, a boolean, a symbol, null or undefined is an object. An object (that is, a member of the type object) is a collection of properties where each property has a name and a value (either a primitive value or another object).
+* An ordinary JavaScript **object** is an **unordered** collection of named values. The language also defines a special kind of object, known as an **array**, that represents an **ordered** collection of numbered values.
+* A **Set** object represents a set of **unique** values. A **Map** object represents a mapping from keys to values. Various “**typed array**” types facilitate operations on arrays of bytes and other binary data. The **RegExp** type represents textual patterns and enables sophisticated matching, searching, and replacing operations on strings. The **Date** type represents dates and times and supports rudimentary date arithmetic. **Error** and its subtypes represent errors that can arise when executing JavaScript code.
+* JavaScript differs from more static languages in that **functions** and **classes** are not just part of the language syntax: they are themselves values that can be manipulated by JavaScript programs.
+* The JavaScript interpreter performs **automatic garbage collection** for memory management. This means that a JavaScript programmer generally does not need to worry about destruction or deallocation of objects or other values.
+* JavaScript supports an **object-oriented programming** style.
+* JavaScript’s **object** types are **mutable** and its **primitive** types are **immutable**.
+* Constants and variables allow you to use names to refer to values in your programs. **Constants** are declared with **const** and **variables** are declared with **let** (or with **var** in older JavaScript code). JavaScript constants and variables are **untyped**: declarations do not specify what kind of values will be assigned.
 
 # Numbers
 
