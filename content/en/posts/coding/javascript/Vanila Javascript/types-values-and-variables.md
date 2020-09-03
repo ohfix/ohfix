@@ -24,7 +24,7 @@ toc = true
 # Numbers
 
 * JavaScript represents numbers using the 64-bit floating-point format defined by the IEEE 754 standard,1 which means it can represent numbers as large as ±1.7976931348623157 × 10308 and as small as ±5 × 10−324.
-* The JavaScript number format allows you to exactly represent all integers between −9007199254740992 (−253) and 9007199254740992 (253), inclusive.
+* The JavaScript number format allows you to exactly represent all integers between −9007199254740992 (-2^53^) and 9007199254740992 (2^53^), inclusive.
 
 ### Integer Literals
 
@@ -33,8 +33,8 @@ toc = true
 * In ECMAScript 6 and later you can also express integers in binary (base 2) or octal (base 8) using the prefixes 0b and 0o (or 0B and 0O) instead of 0x.
 
   ```javascript
-  0b10101  // => 21:  (116 + 08 + 14 + 02 + 11)
-  0o377    // => 255: (364 + 78 + 71)
+  0b10101  // => 21:  (1*16 + 0*8 + 1*4 + 0*2 + 1*1)
+  0o377    // => 255: (3*64 + 7*8 + 7*1)
   ```
 
 ### Floating-Point Literals
@@ -58,10 +58,13 @@ toc = true
 
 * You can use underscores within numeric literals to break long literals up into chunks that are easier to read:
 
+  ```javascript
   let billion = 1_000_000_000;   // Underscore as a thousands separator.
   let bytes = 0x89_AB_CD_EF;     // As a bytes separator.
   let bits = 0b0001_1101_0111;   // As a nibble separator.
   let fraction = 0.123_456_789;  // Works in the fractional part, too.
+  ```
+  
 * At the time of this writing in early 2020, underscores in numeric literals are not yet formally standardized as part of JavaScript. But they are in the advanced stages of the standardization process, are implemented by all major browsers, and by Node.
 
 ### Arithmetic in JavaScript
