@@ -25,8 +25,10 @@ toc = true
 * Hexadecimal: start with 0X or 0x, ex: 0xA2, 0xABFC136,...
 * In ECMAScript 6 and later you can also express integers in binary (base 2) or octal (base 8) using the prefixes 0b and 0o (or 0B and 0O) instead of 0x.
 
+  ```javascript
   0b10101  // => 21:  (116 + 08 + 14 + 02 + 11)
   0o377    // => 255: (364 + 78 + 71)
+  ```
 
 ### Floating-Point Literals
 
@@ -146,10 +148,12 @@ let iso = now.toISOString(); // Convert to a string in standard format.
   `the newline character at the end of this line
   is included literally in this string`
   //
-<button onclick="alert('Thank you')">Click Me</button>
+  ```
+  ```html
+  <button onclick="alert('Thank you')">Click Me</button>
   ```
   
-  ### Escape Sequences in String Literals
+### Escape Sequences in String Literals
   * \\0 : The NULL character (\\u0000)
   * \\b : Backspace (\\u0008)
   * \\t : Horizontal tab (\\u0009)
