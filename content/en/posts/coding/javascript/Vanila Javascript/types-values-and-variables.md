@@ -260,3 +260,17 @@ text.replace(pattern, "#")       // => "testing: #, #, #"
 text.split(/\D+/)                // => ["","1","2","3"]: split on nondigits
 ```
 
+## Boolean Values
+
+Any JavaScript value can be converted to a boolean value. The following values convert to, and therefore work like, false:
+
+```javascript
+undefined
+null
+0
+-0
+NaN
+""  // the empty string
+```
+
+All other values, including all objects (and arrays) convert to, and work like, true. false, and the six values that convert to it, are sometimes called falsy values, and all other values are called truthy. Any time JavaScript expects a boolean value, a falsy value works like false and a truthy value works like true.
