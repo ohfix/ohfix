@@ -1,6 +1,7 @@
 +++
 categories = ["AI"]
 date = 2020-06-26T17:00:00Z
+draft = true
 images = []
 series = ["AI"]
 tags = ["AI"]
