@@ -10,20 +10,20 @@ toc = true
 +++
 # Overview and Definitions
 
-* JavaScript types can be divided into two categories: **primitive** types and **object** types. JavaScript’s primitive types include **numbers**, **strings** of text (known as strings), and **Boolean** truth values (known as booleans). A significant portion of this blog is dedicated to a detailed explanation of the numeric, Boolean and string types in JavaScript.
-* The special JavaScript values **null** and **undefined** are primitive values, but they are not numbers, strings, or booleans. Each value is typically considered to be the sole member of its own special type. ES6 adds a new special-purpose type, known as **Symbol**, that enables the definition of language extensions without harming backward compatibility.
+* JavaScript types can be divided into two categories: *primitive* types and *object* types. JavaScript’s primitive types include *numbers*, *strings* of text (known as strings), and *Boolean* truth values (known as booleans). A significant portion of this blog is dedicated to a detailed explanation of the numeric, Boolean and string types in JavaScript.
+* The special JavaScript values *null* and *undefined* are primitive values, but they are not numbers, strings, or booleans. Each value is typically considered to be the sole member of its own special type. ES6 adds a new special-purpose type, known as *Symbol*, that enables the definition of language extensions without harming backward compatibility.
 * Any JavaScript value that is not a number, a string, a boolean, a symbol, null or undefined is an object. An object (that is, a member of the type object) is a collection of properties where each property has a name and a value (either a primitive value or another object).
-* An ordinary JavaScript **object** is an **unordered** collection of named values. The language also defines a special kind of object, known as an **array**, that represents an **ordered** collection of numbered values.
-* A **Set** object represents a set of **unique** values. A **Map** object represents a mapping from keys to values. Various “**typed array**” types facilitate operations on arrays of bytes and other binary data. The **RegExp** type represents textual patterns and enables sophisticated matching, searching, and replacing operations on strings. The **Date** type represents dates and times and supports rudimentary date arithmetic. **Error** and its subtypes represent errors that can arise when executing JavaScript code.
-* JavaScript differs from more static languages in that **functions** and **classes** are not just part of the language syntax: they are themselves values that can be manipulated by JavaScript programs.
-* The JavaScript interpreter performs **automatic garbage collection** for memory management. This means that a JavaScript programmer generally does not need to worry about destruction or deallocation of objects or other values.
-* JavaScript supports an **object-oriented programming** style.
-* JavaScript’s **object** types are **mutable** and its **primitive** types are **immutable**.
-* Constants and variables allow you to use names to refer to values in your programs. **Constants** are declared with **const** and **variables** are declared with **let** (or with **var** in older JavaScript code). JavaScript constants and variables are **untyped**: declarations do not specify what kind of values will be assigned.
+* An ordinary JavaScript *object* is an *unordered* collection of named values. The language also defines a special kind of object, known as an *array*, that represents an *ordered* collection of numbered values.
+* A *Set* object represents a set of *unique* values. A *Map* object represents a mapping from keys to values. Various “*typed array*” types facilitate operations on arrays of bytes and other binary data. The *RegExp* type represents textual patterns and enables sophisticated matching, searching, and replacing operations on strings. The *Date* type represents dates and times and supports rudimentary date arithmetic. *Error* and its subtypes represent errors that can arise when executing JavaScript code.
+* JavaScript differs from more static languages in that *functions* and *classes* are not just part of the language syntax: they are themselves values that can be manipulated by JavaScript programs.
+* The JavaScript interpreter performs *automatic garbage collection* for memory management. This means that a JavaScript programmer generally does not need to worry about destruction or deallocation of objects or other values.
+* JavaScript supports an *object-oriented programming* style.
+* JavaScript’s *object* types are *mutable* and its *primitive* types are *immutable*.
+* Constants and variables allow you to use names to refer to values in your programs. Constants are declared with *const* and *variables* are declared with *let* (or with *var* in older JavaScript code). JavaScript constants and variables are *untyped*: declarations do not specify what kind of values will be assigned.
 
 # Numbers
 
-* JavaScript represents numbers using the 64-bit floating-point format defined by the IEEE 754 standard,1 which means it can represent numbers as large as ±1.7976931348623157 × 10308 and as small as ±5 × 10−324.
+* JavaScript represents numbers using the 64-bit floating-point format defined by the IEEE 754 standard,1 which means it can represent numbers as large as ±1.7976931348623157 × 10308 and as small as ±5 × 10^−324^.
 * The JavaScript number format allows you to exactly represent all integers between −9007199254740992 (-2^53^) and 9007199254740992 (2^53^), inclusive.
 
 ### Integer Literals
@@ -278,3 +278,30 @@ All other values, including all objects (and arrays) convert to, and work like, 
 ## null and undefined
 
 I consider undefined to represent a system-level, unexpected, or error-like absence of value and null to represent a program-level, normal, or expected absence of value. I avoid using null and undefined when I can, but if I need to assign one of these values to a variable or property or pass or return one of these values to or from a function, I usually use null. Some programmers strive to avoid null entirely and use undefined in its place wherever they can.
+
+## Symbols
+
+Symbols were introduced in ES6 to serve as non-string property names. The Symbol type does not have a literal syntax. To obtain a Symbol value, you call the Symbol() function. This function never returns the same value twice, even when called with the same argument.
+
+```javascript
+let strname = "string name";      // A string to use as a property name
+let symname = Symbol("propname"); // A Symbol to use as a property name
+typeof strname                    // => "string": strname is a string
+typeof symname                    // => "symbol": symname is a symbol
+let o = {};                       // Create a new object
+o[strname] = 1;                   // Define a property with a string name
+o[symname] = 2;                   // Define a property with a Symbol name
+o[strname]                        // => 1: access the string-named property
+o[symname]                        // => 2: access the symbol-named property
+```
+
+The Symbol.for() function is completely different than the Symbol() function: Symbol() never returns the same value twice, but Symbol.for() always returns the same value when called with the same string.
+
+```javascript
+let s = Symbol.for("shared");
+let t = Symbol.for("shared");
+s === t          // => true
+s.toString()     // => "Symbol(shared)"
+Symbol.keyFor(t) // => "shared"
+```
+
