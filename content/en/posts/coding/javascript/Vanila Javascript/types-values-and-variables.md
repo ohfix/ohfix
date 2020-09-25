@@ -260,7 +260,7 @@ text.replace(pattern, "#")       // => "testing: #, #, #"
 text.split(/\D+/)                // => ["","1","2","3"]: split on nondigits
 ```
 
-## Boolean Values
+# Boolean Values
 
 Any JavaScript value can be converted to a boolean value. The following values convert to, and therefore work like, false:
 
@@ -275,11 +275,11 @@ NaN
 
 All other values, including all objects (and arrays) convert to, and work like, true. false, and the six values that convert to it, are sometimes called falsy values, and all other values are called truthy. Any time JavaScript expects a boolean value, a falsy value works like false and a truthy value works like true.
 
-## null and undefined
+# null and undefined
 
 I consider undefined to represent a system-level, unexpected, or error-like absence of value and null to represent a program-level, normal, or expected absence of value. I avoid using null and undefined when I can, but if I need to assign one of these values to a variable or property or pass or return one of these values to or from a function, I usually use null. Some programmers strive to avoid null entirely and use undefined in its place wherever they can.
 
-## Symbols
+# Symbols
 
 Symbols were introduced in ES6 to serve as non-string property names. The Symbol type does not have a literal syntax. To obtain a Symbol value, you call the Symbol() function. This function never returns the same value twice, even when called with the same argument.
 
@@ -305,7 +305,7 @@ s.toString()     // => "Symbol(shared)"
 Symbol.keyFor(t) // => "shared"
 ```
 
-## The Global Object
+# The Global Object
 
 The global object is a regular JavaScript object that serves a very important purpose: the properties of this object are the globally defined identifiers that are available to a JavaScript program. When the JavaScript interpreter starts (or whenever a web browser loads a new page), it creates a new global object and gives it an initial set of properties that define:
 
@@ -324,3 +324,29 @@ In Node, the global object has a property named global whose value is the global
 In web browsers, the Window object serves as the global object for all JavaScript code contained in the browser window it represents. This global Window object has a self-referential window property that can be used to refer to the global object. The Window object defines the core global properties, but it also defines quite a few other globals that are specific to web browsers and client-side JavaScript. Web worker threads (§15.13) have a different global object than the Window with which they are associated. Code in a worker can refer to its global object as self.
 
 ES2020 finally defines globalThis as the standard way to refer to the global object in any context. As of early 2020, this feature has been implemented by all modern browsers and by Node.
+
+# Immutable Primitive Values and Mutable Object References
+
+Primitives are immutable: there is no way to change (or “mutate”) a primitive value.
+
+Objects are different than primitives. First, they are mutable—their values can change.
+
+Objects are not compared by value: two distinct objects are not equal even if they have the same properties and values. And two distinct arrays are not equal even if they have the same elements in the same order:
+
+```javascript
+let o = {x: 1}, p = {x: 1};  // Two objects with the same properties
+o === p                      // => false: distinct objects are never equal
+let a = [], b = [];          // Two distinct, empty arrays
+a === b                      // => false: distinct arrays are never equal
+```
+
+Two object values are the same if and only if they refer to the same underlying object.
+
+```javascript
+let a = [];   // The variable a refers to an empty array.
+let b = a;    // Now b refers to the same array.
+b[0] = 1;     // Mutate the array referred to by variable b.
+a[0]          // => 1: the change is also visible through variable a.
+a === b       // => true: a and b refer to the same object, so they are equal.
+```
+
