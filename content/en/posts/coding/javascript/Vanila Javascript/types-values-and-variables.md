@@ -350,3 +350,35 @@ a[0]          // => 1: the change is also visible through variable a.
 a === b       // => true: a and b refer to the same object, so they are equal.
 ```
 
+# Type Conversions
+
+```javascript
+10 + " objects"     // => "10 objects":  Number 10 converts to a string
+"7" * "4"           // => 28: both strings convert to numbers
+let n = 1 - "x";    // n == NaN; string "x" can't convert to a number
+n + " objects"      // => "NaN objects": NaN converts to string "NaN"
+```
+
+Strings that can be parsed as numbers convert to those numbers. Leading and trailing spaces are allowed, but any leading or trailing nonspace characters that are not part of a numeric literal cause the string-to-number conversion to produce NaN.
+
+| Value             | to String        | to Number | to Boolean |
+| ----------------- | ---------------- | --------- | ---------- |
+| undefined         | "undefined"      | NaN       | false      |
+| null              | "null"           | 0         | false      |
+| true              | "true"           | 1         |            |
+| false             | "false"          | 0         |            |
+| "" (empty string) |                  | 0         | false      |
+| "1.2"             |                  | 1.2       | true       |
+| "one"             |                  | NaN       | true       |
+| 0                 | "0"              |           | false      |
+| -0                | "0"              |           | false      |
+| 1                 | "1"              |           | true       |
+| Infinity          | "Infinity"       |           | true       |
+| -Infinity         | "-Infinity"      |           | true       |
+| NaN               | "NaN"            |           | false      |
+| {} (any object)   | see next         | see next  | true       |
+| [] (empty array)  | ""               | 0         | true       |
+| [9]               | "9"              | 9         | true       |
+| ['a']             | "a" (use join()) | NaN       | true       |
+| function(){}      | see next         | NaN       | true       |
+
