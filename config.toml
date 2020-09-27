@@ -1,4 +1,4 @@
-baseURL = "https://ohfix.xyz"
+baseURL = "https://ohfix.netlify.app"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Oh, fixed it"
