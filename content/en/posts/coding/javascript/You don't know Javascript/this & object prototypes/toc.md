@@ -1,6 +1,6 @@
 +++
 categories = ["Javascript"]
-date = 2020-04-9T17:00:00Z
+date = 2020-04-09T17:00:00Z
 images = []
 series = ["Javascript", "You don't know Javascript"]
 tags = ["Javascript advanced", "Vanila Javascript", "Javascript", "this & Object Prototypes"]
