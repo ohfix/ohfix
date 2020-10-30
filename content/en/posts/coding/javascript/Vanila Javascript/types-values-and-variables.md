@@ -435,3 +435,16 @@ parseInt("077", 8)    // => 63: (7*8 + 7)
 parseInt("077", 10)   // => 77: (7*10 + 7)
 ```
 
+### Object to Primitive Conversions
+
+#### THE TOSTRING() AND VALUEOF() METHODS
+
+```javascript
+[1,2,3].toString()                  // => "1,2,3"
+(function(x) { f(x); }).toString()  // => "function(x) { f(x); }"
+/\d+/g.toString()                   // => "/\\d+/g"
+let d = new Date(2010, 0, 1);   // January 1, 2010, (Pacific time)
+d.valueOf()                     // => 1262332800000
+d.toString()  // => "Wed Jan 01 2020 00:00:00 GMT-0800 (Pacific Standard Time)"
+```
+
