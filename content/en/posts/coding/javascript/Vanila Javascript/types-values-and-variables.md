@@ -448,3 +448,16 @@ d.valueOf()                     // => 1262332800000
 d.toString()  // => "Wed Jan 01 2020 00:00:00 GMT-0800 (Pacific Standard Time)"
 ```
 
+#### OBJECT-TO-PRIMITIVE CONVERSION ALGORITHMS
+
+- The prefer-string algorithm first tries the toString() method. If the method is defined and returns a primitive value, then JavaScript uses that primitive value (even if it is not a string!). If toString() does not exist or if it returns an object, then JavaScript tries the valueOf() method. If that method exists and returns a primitive value, then JavaScript uses that value. Otherwise, the conversion fails with a TypeError.
+
+- The prefer-number algorithm works like the prefer-string algorithm, except that it tries valueOf() first and toString() second.
+
+- The no-preference algorithm depends on the class of the object being converted. If the object is a Date object, then JavaScript uses the prefer-string algorithm. For any other object, JavaScript uses the prefer-number algorithm.
+
+```javascript
+Number([])    // => 0: this is unexpected!
+Number([99])  // => 99: really?
+```
+
